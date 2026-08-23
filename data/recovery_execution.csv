@@ -1,0 +1,501 @@
+transaction_id,customer_id,amount,payment_status,failure_reason,retry_count,recovery_action,priority,executed,success,recovered_amount,result,message
+TXN0001,CUST1163,2023.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0002,CUST1173,12334.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0003,CUST1129,10062.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0004,CUST1107,3810.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0005,CUST1178,7123.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0006,CUST1097,1783.0,failed,insufficient_balance,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0007,CUST1020,9243.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,True,9243.0,RECOVERED,Revenue successfully recovered.
+TXN0008,CUST1011,11033.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,True,11033.0,RECOVERED,Revenue successfully recovered.
+TXN0009,CUST1116,10614.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0010,CUST1179,11398.0,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,True,True,11398.0,RECOVERED,Revenue successfully recovered.
+TXN0011,CUST1069,10684.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0012,CUST1058,13663.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0013,CUST1183,5354.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0014,CUST1067,2486.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0015,CUST1149,6742.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0016,CUST1193,970.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,970.0,RECOVERED,Revenue successfully recovered.
+TXN0017,CUST1119,8868.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0018,CUST1174,14695.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,True,14695.0,RECOVERED,Revenue successfully recovered.
+TXN0019,CUST1116,252.0,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,True,True,252.0,RECOVERED,Revenue successfully recovered.
+TXN0020,CUST1160,5088.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,True,5088.0,RECOVERED,Revenue successfully recovered.
+TXN0021,CUST1000,10012.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0022,CUST1061,1148.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,True,1148.0,RECOVERED,Revenue successfully recovered.
+TXN0023,CUST1194,8926.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,8926.0,RECOVERED,Revenue successfully recovered.
+TXN0024,CUST1108,3669.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,3669.0,RECOVERED,Revenue successfully recovered.
+TXN0025,CUST1115,2181.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0026,CUST1058,9840.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0027,CUST1017,713.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0028,CUST1054,9033.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0029,CUST1024,10995.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0030,CUST1172,10905.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0031,CUST1063,3338.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0032,CUST1118,4291.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,4291.0,RECOVERED,Revenue successfully recovered.
+TXN0033,CUST1003,1727.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0034,CUST1015,2896.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0035,CUST1178,12167.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0036,CUST1148,12253.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0037,CUST1135,2778.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0038,CUST1017,11261.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0039,CUST1152,850.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0040,CUST1080,4471.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0041,CUST1076,7690.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0042,CUST1018,9007.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0043,CUST1062,6253.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0044,CUST1156,13422.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0045,CUST1034,4532.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,True,4532.0,RECOVERED,Revenue successfully recovered.
+TXN0046,CUST1183,5816.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0047,CUST1023,10591.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0048,CUST1163,4490.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,4490.0,RECOVERED,Revenue successfully recovered.
+TXN0049,CUST1139,789.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0050,CUST1010,14926.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,True,14926.0,RECOVERED,Revenue successfully recovered.
+TXN0051,CUST1158,12478.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0052,CUST1188,5641.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0053,CUST1009,14266.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0054,CUST1058,3851.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0055,CUST1197,4772.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0056,CUST1029,14568.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0057,CUST1088,12135.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,12135.0,RECOVERED,Revenue successfully recovered.
+TXN0058,CUST1048,4372.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0059,CUST1093,7265.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,True,7265.0,RECOVERED,Revenue successfully recovered.
+TXN0060,CUST1083,6791.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0061,CUST1173,12456.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0062,CUST1110,13072.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0063,CUST1130,7951.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,7951.0,RECOVERED,Revenue successfully recovered.
+TXN0064,CUST1172,5284.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0065,CUST1156,14121.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0066,CUST1183,11608.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0067,CUST1192,14296.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0068,CUST1012,9331.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0069,CUST1143,9954.0,failed,authentication_failed,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0070,CUST1190,14313.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0071,CUST1070,12746.0,failed,network_error,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0072,CUST1060,4650.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,True,4650.0,RECOVERED,Revenue successfully recovered.
+TXN0073,CUST1098,11568.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0074,CUST1119,7011.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,7011.0,RECOVERED,Revenue successfully recovered.
+TXN0075,CUST1001,5962.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0076,CUST1154,14908.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0077,CUST1099,5706.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0078,CUST1100,9896.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0079,CUST1046,1022.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0080,CUST1194,14611.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,14611.0,RECOVERED,Revenue successfully recovered.
+TXN0081,CUST1191,9036.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0082,CUST1010,12556.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0083,CUST1061,2267.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0084,CUST1042,10125.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0085,CUST1079,9632.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0086,CUST1151,11514.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0087,CUST1030,13244.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0088,CUST1017,8488.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0089,CUST1027,7301.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0090,CUST1069,10290.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0091,CUST1082,14153.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0092,CUST1145,10198.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0093,CUST1046,8187.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,8187.0,RECOVERED,Revenue successfully recovered.
+TXN0094,CUST1142,365.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0095,CUST1142,12620.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0096,CUST1056,6824.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0097,CUST1141,8897.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0098,CUST1069,5222.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0099,CUST1190,8978.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0100,CUST1185,9858.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0101,CUST1075,3926.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0102,CUST1070,944.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0103,CUST1026,14497.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0104,CUST1047,1040.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0105,CUST1018,9652.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0106,CUST1021,4265.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,4265.0,RECOVERED,Revenue successfully recovered.
+TXN0107,CUST1113,5070.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0108,CUST1189,1824.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0109,CUST1044,9242.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0110,CUST1120,4970.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0111,CUST1018,11461.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,11461.0,RECOVERED,Revenue successfully recovered.
+TXN0112,CUST1057,10809.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0113,CUST1152,12469.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0114,CUST1179,6793.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0115,CUST1010,14771.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0116,CUST1150,538.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0117,CUST1071,3172.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0118,CUST1085,5459.0,abandoned,checkout_abandoned,2,PRIORITY_REMINDER,HIGH,True,True,5459.0,RECOVERED,Revenue successfully recovered.
+TXN0119,CUST1073,11054.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0120,CUST1082,2098.0,failed,insufficient_balance,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0121,CUST1132,6126.0,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0122,CUST1073,7377.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0123,CUST1181,2793.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0124,CUST1029,7759.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0125,CUST1180,4678.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,True,4678.0,RECOVERED,Revenue successfully recovered.
+TXN0126,CUST1098,3321.0,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,True,True,3321.0,RECOVERED,Revenue successfully recovered.
+TXN0127,CUST1087,13104.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,13104.0,RECOVERED,Revenue successfully recovered.
+TXN0128,CUST1038,7515.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0129,CUST1096,7659.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,True,7659.0,RECOVERED,Revenue successfully recovered.
+TXN0130,CUST1198,6929.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0131,CUST1038,8314.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0132,CUST1112,1832.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0133,CUST1039,1424.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0134,CUST1020,14154.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0135,CUST1138,787.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0136,CUST1058,12434.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,True,12434.0,RECOVERED,Revenue successfully recovered.
+TXN0137,CUST1007,952.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0138,CUST1062,8901.0,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,True,True,8901.0,RECOVERED,Revenue successfully recovered.
+TXN0139,CUST1097,10352.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0140,CUST1118,10650.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0141,CUST1073,11300.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0142,CUST1163,7150.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0143,CUST1123,1946.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,1946.0,RECOVERED,Revenue successfully recovered.
+TXN0144,CUST1168,6683.0,failed,insufficient_balance,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0145,CUST1155,13337.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,13337.0,RECOVERED,Revenue successfully recovered.
+TXN0146,CUST1174,13934.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,True,13934.0,RECOVERED,Revenue successfully recovered.
+TXN0147,CUST1008,9694.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0148,CUST1044,3488.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,True,3488.0,RECOVERED,Revenue successfully recovered.
+TXN0149,CUST1042,4409.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,True,4409.0,RECOVERED,Revenue successfully recovered.
+TXN0150,CUST1193,3895.0,abandoned,checkout_abandoned,2,PRIORITY_REMINDER,HIGH,True,True,3895.0,RECOVERED,Revenue successfully recovered.
+TXN0151,CUST1003,4531.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0152,CUST1149,6441.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0153,CUST1158,14686.0,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0154,CUST1118,11685.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0155,CUST1077,8270.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0156,CUST1116,6277.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0157,CUST1106,10929.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,True,10929.0,RECOVERED,Revenue successfully recovered.
+TXN0158,CUST1113,7484.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0159,CUST1165,6075.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0160,CUST1023,11057.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0161,CUST1144,3561.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0162,CUST1084,12886.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0163,CUST1064,13281.0,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,True,True,13281.0,RECOVERED,Revenue successfully recovered.
+TXN0164,CUST1150,5503.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0165,CUST1134,2061.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0166,CUST1027,7604.0,abandoned,checkout_abandoned,0,PRIORITY_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0167,CUST1133,5140.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0168,CUST1109,11440.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,11440.0,RECOVERED,Revenue successfully recovered.
+TXN0169,CUST1037,1275.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,1275.0,RECOVERED,Revenue successfully recovered.
+TXN0170,CUST1075,7632.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0171,CUST1166,14579.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0172,CUST1116,6731.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0173,CUST1095,2699.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0174,CUST1024,12398.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0175,CUST1084,11176.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0176,CUST1184,1041.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0177,CUST1054,2734.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0178,CUST1094,2081.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0179,CUST1196,13608.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,13608.0,RECOVERED,Revenue successfully recovered.
+TXN0180,CUST1177,4580.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0181,CUST1089,299.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,299.0,RECOVERED,Revenue successfully recovered.
+TXN0182,CUST1007,1702.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0183,CUST1040,6261.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,6261.0,RECOVERED,Revenue successfully recovered.
+TXN0184,CUST1193,10321.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0185,CUST1155,7441.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0186,CUST1110,2015.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0187,CUST1056,6674.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0188,CUST1196,2447.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0189,CUST1044,2315.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0190,CUST1111,506.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0191,CUST1106,4942.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0192,CUST1117,13830.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0193,CUST1150,6759.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0194,CUST1056,5655.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0195,CUST1049,12916.0,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0196,CUST1050,3041.0,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,True,True,3041.0,RECOVERED,Revenue successfully recovered.
+TXN0197,CUST1193,9435.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,9435.0,RECOVERED,Revenue successfully recovered.
+TXN0198,CUST1112,1317.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,True,1317.0,RECOVERED,Revenue successfully recovered.
+TXN0199,CUST1079,7764.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0200,CUST1023,10275.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0201,CUST1115,13467.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0202,CUST1015,7580.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,True,7580.0,RECOVERED,Revenue successfully recovered.
+TXN0203,CUST1010,4258.0,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,True,True,4258.0,RECOVERED,Revenue successfully recovered.
+TXN0204,CUST1099,6896.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0205,CUST1016,5600.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0206,CUST1154,14506.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0207,CUST1079,10947.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0208,CUST1079,9356.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0209,CUST1130,6127.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0210,CUST1049,3910.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0211,CUST1189,14677.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,14677.0,RECOVERED,Revenue successfully recovered.
+TXN0212,CUST1041,3161.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0213,CUST1173,11988.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,11988.0,RECOVERED,Revenue successfully recovered.
+TXN0214,CUST1120,13881.0,failed,authentication_failed,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0215,CUST1199,6455.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0216,CUST1154,2466.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,True,2466.0,RECOVERED,Revenue successfully recovered.
+TXN0217,CUST1031,4869.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0218,CUST1023,3836.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0219,CUST1095,4061.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0220,CUST1182,10847.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0221,CUST1178,13815.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0222,CUST1004,4392.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0223,CUST1108,2020.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0224,CUST1163,13206.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0225,CUST1004,10552.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0226,CUST1000,10272.0,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0227,CUST1134,9113.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0228,CUST1095,4354.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0229,CUST1187,10964.0,failed,network_error,1,RETRY_PAYMENT,MEDIUM,True,True,10964.0,RECOVERED,Revenue successfully recovered.
+TXN0230,CUST1086,13527.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0231,CUST1016,11930.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0232,CUST1010,5369.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0233,CUST1009,12540.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0234,CUST1084,4675.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0235,CUST1098,5753.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,5753.0,RECOVERED,Revenue successfully recovered.
+TXN0236,CUST1020,7254.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0237,CUST1083,11027.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0238,CUST1176,7471.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0239,CUST1070,10676.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,10676.0,RECOVERED,Revenue successfully recovered.
+TXN0240,CUST1007,2538.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0241,CUST1093,6132.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0242,CUST1094,6294.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,6294.0,RECOVERED,Revenue successfully recovered.
+TXN0243,CUST1071,4288.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0244,CUST1198,4463.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0245,CUST1051,2208.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0246,CUST1174,14052.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,14052.0,RECOVERED,Revenue successfully recovered.
+TXN0247,CUST1182,11824.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,11824.0,RECOVERED,Revenue successfully recovered.
+TXN0248,CUST1060,13148.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0249,CUST1141,2325.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0250,CUST1134,6929.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0251,CUST1115,7831.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0252,CUST1046,12778.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0253,CUST1132,2706.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0254,CUST1132,14861.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0255,CUST1032,10439.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0256,CUST1151,9712.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0257,CUST1020,943.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0258,CUST1106,10326.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0259,CUST1164,5148.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,5148.0,RECOVERED,Revenue successfully recovered.
+TXN0260,CUST1040,7401.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0261,CUST1080,14313.0,failed,network_error,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0262,CUST1131,9401.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0263,CUST1063,2507.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0264,CUST1107,4266.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,True,4266.0,RECOVERED,Revenue successfully recovered.
+TXN0265,CUST1127,8632.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0266,CUST1129,7690.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0267,CUST1167,11217.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0268,CUST1067,12118.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0269,CUST1143,3388.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0270,CUST1195,9207.0,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0271,CUST1086,9338.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0272,CUST1010,941.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0273,CUST1035,5572.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0274,CUST1151,5710.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0275,CUST1121,13564.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0276,CUST1078,13253.0,failed,network_error,1,RETRY_PAYMENT,MEDIUM,True,True,13253.0,RECOVERED,Revenue successfully recovered.
+TXN0277,CUST1122,2992.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,2992.0,RECOVERED,Revenue successfully recovered.
+TXN0278,CUST1146,11676.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0279,CUST1105,11512.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0280,CUST1188,12116.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0281,CUST1134,6372.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0282,CUST1090,11272.0,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,True,True,11272.0,RECOVERED,Revenue successfully recovered.
+TXN0283,CUST1057,5075.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,5075.0,RECOVERED,Revenue successfully recovered.
+TXN0284,CUST1184,4679.0,failed,authentication_failed,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0285,CUST1197,13381.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0286,CUST1113,10946.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0287,CUST1178,4649.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0288,CUST1057,10651.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0289,CUST1025,11359.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,True,11359.0,RECOVERED,Revenue successfully recovered.
+TXN0290,CUST1122,10857.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0291,CUST1166,9605.0,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,True,True,9605.0,RECOVERED,Revenue successfully recovered.
+TXN0292,CUST1009,13899.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0293,CUST1009,350.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,350.0,RECOVERED,Revenue successfully recovered.
+TXN0294,CUST1134,8291.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0295,CUST1084,2861.0,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0296,CUST1145,11248.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0297,CUST1102,11164.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0298,CUST1001,4471.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0299,CUST1149,12042.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0300,CUST1015,11140.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0301,CUST1180,12812.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,12812.0,RECOVERED,Revenue successfully recovered.
+TXN0302,CUST1034,8033.0,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0303,CUST1120,12607.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0304,CUST1180,6126.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0305,CUST1051,9582.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0306,CUST1174,3564.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0307,CUST1116,2360.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0308,CUST1172,13419.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0309,CUST1148,1395.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0310,CUST1017,7933.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0311,CUST1186,10781.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0312,CUST1096,1513.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0313,CUST1137,6638.0,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,True,True,6638.0,RECOVERED,Revenue successfully recovered.
+TXN0314,CUST1172,11980.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0315,CUST1088,2740.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0316,CUST1157,12750.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0317,CUST1114,9993.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0318,CUST1059,9042.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0319,CUST1081,9660.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0320,CUST1056,6974.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0321,CUST1160,11319.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0322,CUST1171,6443.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,6443.0,RECOVERED,Revenue successfully recovered.
+TXN0323,CUST1193,9012.0,failed,network_error,1,RETRY_PAYMENT,MEDIUM,True,True,9012.0,RECOVERED,Revenue successfully recovered.
+TXN0324,CUST1143,6960.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0325,CUST1052,5610.0,abandoned,checkout_abandoned,2,PRIORITY_REMINDER,HIGH,True,True,5610.0,RECOVERED,Revenue successfully recovered.
+TXN0326,CUST1013,4597.0,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0327,CUST1055,8053.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0328,CUST1189,2121.0,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,True,True,2121.0,RECOVERED,Revenue successfully recovered.
+TXN0329,CUST1141,5468.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0330,CUST1066,6091.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0331,CUST1052,6272.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0332,CUST1004,4471.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,4471.0,RECOVERED,Revenue successfully recovered.
+TXN0333,CUST1058,6422.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0334,CUST1065,12705.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0335,CUST1043,2492.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0336,CUST1134,753.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,753.0,RECOVERED,Revenue successfully recovered.
+TXN0337,CUST1181,2673.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0338,CUST1163,11123.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0339,CUST1003,473.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0340,CUST1178,11242.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0341,CUST1061,3343.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0342,CUST1020,6311.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0343,CUST1167,14260.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0344,CUST1121,1118.0,failed,insufficient_balance,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0345,CUST1144,14255.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,True,14255.0,RECOVERED,Revenue successfully recovered.
+TXN0346,CUST1121,4640.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,True,4640.0,RECOVERED,Revenue successfully recovered.
+TXN0347,CUST1004,3593.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,3593.0,RECOVERED,Revenue successfully recovered.
+TXN0348,CUST1061,9483.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0349,CUST1128,12412.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0350,CUST1087,10114.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0351,CUST1069,13036.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0352,CUST1110,3242.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0353,CUST1021,4589.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0354,CUST1023,284.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0355,CUST1022,3269.0,failed,authentication_failed,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0356,CUST1090,9279.0,failed,network_error,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0357,CUST1099,12964.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0358,CUST1175,6436.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0359,CUST1016,2938.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0360,CUST1092,4322.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0361,CUST1001,6682.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0362,CUST1110,13559.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0363,CUST1122,5346.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,True,5346.0,RECOVERED,Revenue successfully recovered.
+TXN0364,CUST1125,9634.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0365,CUST1144,3472.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0366,CUST1181,3633.0,failed,insufficient_balance,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0367,CUST1162,5160.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0368,CUST1122,9738.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0369,CUST1009,13154.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0370,CUST1042,10799.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,10799.0,RECOVERED,Revenue successfully recovered.
+TXN0371,CUST1025,4438.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,4438.0,RECOVERED,Revenue successfully recovered.
+TXN0372,CUST1118,12853.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0373,CUST1075,7014.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,True,7014.0,RECOVERED,Revenue successfully recovered.
+TXN0374,CUST1052,8736.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0375,CUST1081,1299.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0376,CUST1173,13307.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0377,CUST1143,7184.0,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,True,True,7184.0,RECOVERED,Revenue successfully recovered.
+TXN0378,CUST1101,677.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0379,CUST1001,11745.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0380,CUST1147,1866.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0381,CUST1067,11187.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,True,11187.0,RECOVERED,Revenue successfully recovered.
+TXN0382,CUST1100,9816.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0383,CUST1172,11765.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,True,11765.0,RECOVERED,Revenue successfully recovered.
+TXN0384,CUST1029,3198.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0385,CUST1147,6485.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0386,CUST1044,9290.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0387,CUST1158,1077.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0388,CUST1143,8480.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0389,CUST1125,2939.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0390,CUST1070,3882.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0391,CUST1140,8568.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0392,CUST1138,13676.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0393,CUST1192,4254.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0394,CUST1112,14375.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0395,CUST1181,10197.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0396,CUST1052,13395.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0397,CUST1043,5501.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0398,CUST1173,13554.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0399,CUST1032,11691.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0400,CUST1194,14019.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0401,CUST1160,6985.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0402,CUST1191,4757.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0403,CUST1000,14435.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,True,14435.0,RECOVERED,Revenue successfully recovered.
+TXN0404,CUST1101,3767.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0405,CUST1086,9166.0,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0406,CUST1011,1830.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0407,CUST1000,7208.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0408,CUST1023,10923.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0409,CUST1042,1047.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0410,CUST1000,3695.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0411,CUST1002,331.0,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0412,CUST1098,1662.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0413,CUST1035,6469.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0414,CUST1166,2887.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0415,CUST1055,1619.0,failed,authentication_failed,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0416,CUST1035,4258.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0417,CUST1072,12961.0,failed,network_error,1,RETRY_PAYMENT,MEDIUM,True,True,12961.0,RECOVERED,Revenue successfully recovered.
+TXN0418,CUST1048,12451.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0419,CUST1127,10653.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0420,CUST1033,6536.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0421,CUST1197,1394.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0422,CUST1015,13130.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0423,CUST1108,11697.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,11697.0,RECOVERED,Revenue successfully recovered.
+TXN0424,CUST1020,8576.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0425,CUST1195,13871.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0426,CUST1014,4204.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0427,CUST1079,11112.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0428,CUST1041,8332.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0429,CUST1095,2278.0,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0430,CUST1069,8781.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0431,CUST1092,1107.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0432,CUST1146,11243.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0433,CUST1003,4205.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0434,CUST1141,13357.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0435,CUST1069,13732.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0436,CUST1045,3855.0,abandoned,checkout_abandoned,0,PRIORITY_REMINDER,HIGH,True,True,3855.0,RECOVERED,Revenue successfully recovered.
+TXN0437,CUST1198,14040.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0438,CUST1051,4976.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0439,CUST1197,12911.0,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,True,True,12911.0,RECOVERED,Revenue successfully recovered.
+TXN0440,CUST1006,4016.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,True,4016.0,RECOVERED,Revenue successfully recovered.
+TXN0441,CUST1096,14109.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0442,CUST1125,1180.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0443,CUST1105,11681.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0444,CUST1034,10639.0,failed,insufficient_balance,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0445,CUST1074,4475.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0446,CUST1019,3520.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0447,CUST1119,5344.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0448,CUST1118,4540.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0449,CUST1010,3721.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0450,CUST1131,1001.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0451,CUST1115,9307.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0452,CUST1031,394.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0453,CUST1165,1575.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0454,CUST1050,14985.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,True,14985.0,RECOVERED,Revenue successfully recovered.
+TXN0455,CUST1012,2951.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0456,CUST1044,5998.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0457,CUST1008,10260.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0458,CUST1140,8047.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0459,CUST1164,14693.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,14693.0,RECOVERED,Revenue successfully recovered.
+TXN0460,CUST1122,9120.0,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0461,CUST1006,5423.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0462,CUST1135,6055.0,abandoned,checkout_abandoned,0,PRIORITY_REMINDER,HIGH,True,True,6055.0,RECOVERED,Revenue successfully recovered.
+TXN0463,CUST1068,8942.0,failed,bank_timeout,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0464,CUST1045,4074.0,failed,network_error,0,RETRY_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0465,CUST1145,9433.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0466,CUST1125,820.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0467,CUST1122,210.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0468,CUST1082,1174.0,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,True,True,1174.0,RECOVERED,Revenue successfully recovered.
+TXN0469,CUST1018,6319.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,6319.0,RECOVERED,Revenue successfully recovered.
+TXN0470,CUST1187,7356.0,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,True,True,7356.0,RECOVERED,Revenue successfully recovered.
+TXN0471,CUST1044,6398.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0472,CUST1100,14137.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0473,CUST1056,10678.0,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0474,CUST1060,5881.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,True,5881.0,RECOVERED,Revenue successfully recovered.
+TXN0475,CUST1053,4287.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0476,CUST1012,6522.0,abandoned,checkout_abandoned,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0477,CUST1089,9145.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,9145.0,RECOVERED,Revenue successfully recovered.
+TXN0478,CUST1008,5030.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0479,CUST1043,14746.0,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0480,CUST1123,11741.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,False,0.0,FAILED,Recovery attempt was unsuccessful.
+TXN0481,CUST1040,1076.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0482,CUST1184,12158.0,failed,network_error,1,RETRY_PAYMENT,MEDIUM,True,True,12158.0,RECOVERED,Revenue successfully recovered.
+TXN0483,CUST1146,9204.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0484,CUST1075,13697.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0485,CUST1043,10655.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0486,CUST1120,8212.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0487,CUST1094,14706.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0488,CUST1119,4514.0,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,True,True,4514.0,RECOVERED,Revenue successfully recovered.
+TXN0489,CUST1138,6981.0,failed,card_declined,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0490,CUST1146,14644.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0491,CUST1128,9557.0,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,True,True,9557.0,RECOVERED,Revenue successfully recovered.
+TXN0492,CUST1044,2937.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0493,CUST1051,13675.0,failed,network_error,2,RETRY_PAYMENT,MEDIUM,True,True,13675.0,RECOVERED,Revenue successfully recovered.
+TXN0494,CUST1022,6557.0,failed,network_error,3,STOP,HIGH,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0495,CUST1150,8760.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0496,CUST1149,12624.0,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,True,True,12624.0,RECOVERED,Revenue successfully recovered.
+TXN0497,CUST1105,4526.0,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,True,True,4526.0,RECOVERED,Revenue successfully recovered.
+TXN0498,CUST1036,10328.0,success,none,0,NO_ACTION,LOW,False,False,0.0,NOT_EXECUTED,Action is outside automatic recovery scope.
+TXN0499,CUST1012,12417.0,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,True,True,12417.0,RECOVERED,Revenue successfully recovered.
+TXN0500,CUST1079,4792.0,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,True,True,4792.0,RECOVERED,Revenue successfully recovered.

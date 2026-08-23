@@ -1,0 +1,501 @@
+transaction_id,customer_id,amount,payment_status,failure_reason,retry_count,recovery_action,priority,reason,should_execute
+TXN0001,CUST1163,2023,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0002,CUST1173,12334,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0003,CUST1129,10062,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0004,CUST1107,3810,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0005,CUST1178,7123,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0006,CUST1097,1783,failed,insufficient_balance,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0007,CUST1020,9243,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0008,CUST1011,11033,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0009,CUST1116,10614,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0010,CUST1179,11398,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0011,CUST1069,10684,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0012,CUST1058,13663,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0013,CUST1183,5354,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0014,CUST1067,2486,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0015,CUST1149,6742,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0016,CUST1193,970,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0017,CUST1119,8868,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0018,CUST1174,14695,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0019,CUST1116,252,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0020,CUST1160,5088,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0021,CUST1000,10012,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0022,CUST1061,1148,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0023,CUST1194,8926,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0024,CUST1108,3669,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0025,CUST1115,2181,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0026,CUST1058,9840,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0027,CUST1017,713,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0028,CUST1054,9033,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0029,CUST1024,10995,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0030,CUST1172,10905,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0031,CUST1063,3338,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0032,CUST1118,4291,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0033,CUST1003,1727,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0034,CUST1015,2896,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0035,CUST1178,12167,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0036,CUST1148,12253,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0037,CUST1135,2778,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0038,CUST1017,11261,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0039,CUST1152,850,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0040,CUST1080,4471,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0041,CUST1076,7690,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0042,CUST1018,9007,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0043,CUST1062,6253,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0044,CUST1156,13422,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0045,CUST1034,4532,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0046,CUST1183,5816,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0047,CUST1023,10591,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0048,CUST1163,4490,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0049,CUST1139,789,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0050,CUST1010,14926,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0051,CUST1158,12478,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0052,CUST1188,5641,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0053,CUST1009,14266,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0054,CUST1058,3851,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0055,CUST1197,4772,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0056,CUST1029,14568,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0057,CUST1088,12135,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0058,CUST1048,4372,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0059,CUST1093,7265,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0060,CUST1083,6791,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0061,CUST1173,12456,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0062,CUST1110,13072,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0063,CUST1130,7951,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0064,CUST1172,5284,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0065,CUST1156,14121,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0066,CUST1183,11608,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0067,CUST1192,14296,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0068,CUST1012,9331,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0069,CUST1143,9954,failed,authentication_failed,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0070,CUST1190,14313,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0071,CUST1070,12746,failed,network_error,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0072,CUST1060,4650,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0073,CUST1098,11568,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0074,CUST1119,7011,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0075,CUST1001,5962,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0076,CUST1154,14908,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0077,CUST1099,5706,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0078,CUST1100,9896,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0079,CUST1046,1022,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0080,CUST1194,14611,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0081,CUST1191,9036,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0082,CUST1010,12556,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0083,CUST1061,2267,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0084,CUST1042,10125,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0085,CUST1079,9632,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0086,CUST1151,11514,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0087,CUST1030,13244,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0088,CUST1017,8488,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0089,CUST1027,7301,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0090,CUST1069,10290,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0091,CUST1082,14153,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0092,CUST1145,10198,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0093,CUST1046,8187,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0094,CUST1142,365,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0095,CUST1142,12620,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0096,CUST1056,6824,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0097,CUST1141,8897,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0098,CUST1069,5222,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0099,CUST1190,8978,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0100,CUST1185,9858,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0101,CUST1075,3926,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0102,CUST1070,944,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0103,CUST1026,14497,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0104,CUST1047,1040,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0105,CUST1018,9652,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0106,CUST1021,4265,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0107,CUST1113,5070,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0108,CUST1189,1824,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0109,CUST1044,9242,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0110,CUST1120,4970,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0111,CUST1018,11461,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0112,CUST1057,10809,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0113,CUST1152,12469,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0114,CUST1179,6793,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0115,CUST1010,14771,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0116,CUST1150,538,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0117,CUST1071,3172,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0118,CUST1085,5459,abandoned,checkout_abandoned,2,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0119,CUST1073,11054,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0120,CUST1082,2098,failed,insufficient_balance,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0121,CUST1132,6126,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0122,CUST1073,7377,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0123,CUST1181,2793,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0124,CUST1029,7759,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0125,CUST1180,4678,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0126,CUST1098,3321,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0127,CUST1087,13104,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0128,CUST1038,7515,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0129,CUST1096,7659,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0130,CUST1198,6929,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0131,CUST1038,8314,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0132,CUST1112,1832,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0133,CUST1039,1424,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0134,CUST1020,14154,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0135,CUST1138,787,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0136,CUST1058,12434,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0137,CUST1007,952,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0138,CUST1062,8901,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0139,CUST1097,10352,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0140,CUST1118,10650,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0141,CUST1073,11300,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0142,CUST1163,7150,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0143,CUST1123,1946,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0144,CUST1168,6683,failed,insufficient_balance,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0145,CUST1155,13337,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0146,CUST1174,13934,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0147,CUST1008,9694,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0148,CUST1044,3488,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0149,CUST1042,4409,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0150,CUST1193,3895,abandoned,checkout_abandoned,2,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0151,CUST1003,4531,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0152,CUST1149,6441,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0153,CUST1158,14686,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0154,CUST1118,11685,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0155,CUST1077,8270,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0156,CUST1116,6277,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0157,CUST1106,10929,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0158,CUST1113,7484,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0159,CUST1165,6075,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0160,CUST1023,11057,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0161,CUST1144,3561,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0162,CUST1084,12886,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0163,CUST1064,13281,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0164,CUST1150,5503,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0165,CUST1134,2061,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0166,CUST1027,7604,abandoned,checkout_abandoned,0,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0167,CUST1133,5140,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0168,CUST1109,11440,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0169,CUST1037,1275,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0170,CUST1075,7632,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0171,CUST1166,14579,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0172,CUST1116,6731,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0173,CUST1095,2699,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0174,CUST1024,12398,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0175,CUST1084,11176,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0176,CUST1184,1041,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0177,CUST1054,2734,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0178,CUST1094,2081,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0179,CUST1196,13608,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0180,CUST1177,4580,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0181,CUST1089,299,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0182,CUST1007,1702,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0183,CUST1040,6261,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0184,CUST1193,10321,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0185,CUST1155,7441,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0186,CUST1110,2015,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0187,CUST1056,6674,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0188,CUST1196,2447,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0189,CUST1044,2315,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0190,CUST1111,506,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0191,CUST1106,4942,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0192,CUST1117,13830,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0193,CUST1150,6759,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0194,CUST1056,5655,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0195,CUST1049,12916,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0196,CUST1050,3041,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0197,CUST1193,9435,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0198,CUST1112,1317,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0199,CUST1079,7764,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0200,CUST1023,10275,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0201,CUST1115,13467,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0202,CUST1015,7580,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0203,CUST1010,4258,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0204,CUST1099,6896,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0205,CUST1016,5600,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0206,CUST1154,14506,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0207,CUST1079,10947,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0208,CUST1079,9356,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0209,CUST1130,6127,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0210,CUST1049,3910,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0211,CUST1189,14677,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0212,CUST1041,3161,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0213,CUST1173,11988,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0214,CUST1120,13881,failed,authentication_failed,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0215,CUST1199,6455,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0216,CUST1154,2466,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0217,CUST1031,4869,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0218,CUST1023,3836,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0219,CUST1095,4061,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0220,CUST1182,10847,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0221,CUST1178,13815,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0222,CUST1004,4392,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0223,CUST1108,2020,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0224,CUST1163,13206,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0225,CUST1004,10552,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0226,CUST1000,10272,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0227,CUST1134,9113,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0228,CUST1095,4354,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0229,CUST1187,10964,failed,network_error,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0230,CUST1086,13527,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0231,CUST1016,11930,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0232,CUST1010,5369,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0233,CUST1009,12540,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0234,CUST1084,4675,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0235,CUST1098,5753,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0236,CUST1020,7254,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0237,CUST1083,11027,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0238,CUST1176,7471,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0239,CUST1070,10676,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0240,CUST1007,2538,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0241,CUST1093,6132,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0242,CUST1094,6294,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0243,CUST1071,4288,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0244,CUST1198,4463,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0245,CUST1051,2208,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0246,CUST1174,14052,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0247,CUST1182,11824,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0248,CUST1060,13148,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0249,CUST1141,2325,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0250,CUST1134,6929,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0251,CUST1115,7831,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0252,CUST1046,12778,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0253,CUST1132,2706,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0254,CUST1132,14861,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0255,CUST1032,10439,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0256,CUST1151,9712,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0257,CUST1020,943,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0258,CUST1106,10326,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0259,CUST1164,5148,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0260,CUST1040,7401,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0261,CUST1080,14313,failed,network_error,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0262,CUST1131,9401,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0263,CUST1063,2507,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0264,CUST1107,4266,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0265,CUST1127,8632,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0266,CUST1129,7690,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0267,CUST1167,11217,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0268,CUST1067,12118,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0269,CUST1143,3388,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0270,CUST1195,9207,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0271,CUST1086,9338,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0272,CUST1010,941,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0273,CUST1035,5572,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0274,CUST1151,5710,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0275,CUST1121,13564,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0276,CUST1078,13253,failed,network_error,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0277,CUST1122,2992,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0278,CUST1146,11676,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0279,CUST1105,11512,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0280,CUST1188,12116,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0281,CUST1134,6372,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0282,CUST1090,11272,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0283,CUST1057,5075,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0284,CUST1184,4679,failed,authentication_failed,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0285,CUST1197,13381,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0286,CUST1113,10946,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0287,CUST1178,4649,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0288,CUST1057,10651,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0289,CUST1025,11359,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0290,CUST1122,10857,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0291,CUST1166,9605,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0292,CUST1009,13899,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0293,CUST1009,350,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0294,CUST1134,8291,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0295,CUST1084,2861,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0296,CUST1145,11248,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0297,CUST1102,11164,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0298,CUST1001,4471,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0299,CUST1149,12042,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0300,CUST1015,11140,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0301,CUST1180,12812,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0302,CUST1034,8033,failed,authentication_failed,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0303,CUST1120,12607,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0304,CUST1180,6126,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0305,CUST1051,9582,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0306,CUST1174,3564,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0307,CUST1116,2360,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0308,CUST1172,13419,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0309,CUST1148,1395,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0310,CUST1017,7933,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0311,CUST1186,10781,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0312,CUST1096,1513,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0313,CUST1137,6638,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0314,CUST1172,11980,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0315,CUST1088,2740,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0316,CUST1157,12750,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0317,CUST1114,9993,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0318,CUST1059,9042,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0319,CUST1081,9660,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0320,CUST1056,6974,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0321,CUST1160,11319,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0322,CUST1171,6443,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0323,CUST1193,9012,failed,network_error,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0324,CUST1143,6960,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0325,CUST1052,5610,abandoned,checkout_abandoned,2,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0326,CUST1013,4597,failed,insufficient_balance,1,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0327,CUST1055,8053,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0328,CUST1189,2121,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0329,CUST1141,5468,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0330,CUST1066,6091,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0331,CUST1052,6272,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0332,CUST1004,4471,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0333,CUST1058,6422,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0334,CUST1065,12705,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0335,CUST1043,2492,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0336,CUST1134,753,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0337,CUST1181,2673,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0338,CUST1163,11123,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0339,CUST1003,473,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0340,CUST1178,11242,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0341,CUST1061,3343,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0342,CUST1020,6311,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0343,CUST1167,14260,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0344,CUST1121,1118,failed,insufficient_balance,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0345,CUST1144,14255,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0346,CUST1121,4640,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0347,CUST1004,3593,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0348,CUST1061,9483,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0349,CUST1128,12412,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0350,CUST1087,10114,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0351,CUST1069,13036,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0352,CUST1110,3242,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0353,CUST1021,4589,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0354,CUST1023,284,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0355,CUST1022,3269,failed,authentication_failed,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0356,CUST1090,9279,failed,network_error,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0357,CUST1099,12964,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0358,CUST1175,6436,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0359,CUST1016,2938,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0360,CUST1092,4322,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0361,CUST1001,6682,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0362,CUST1110,13559,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0363,CUST1122,5346,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0364,CUST1125,9634,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0365,CUST1144,3472,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0366,CUST1181,3633,failed,insufficient_balance,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0367,CUST1162,5160,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0368,CUST1122,9738,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0369,CUST1009,13154,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0370,CUST1042,10799,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0371,CUST1025,4438,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0372,CUST1118,12853,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0373,CUST1075,7014,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0374,CUST1052,8736,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0375,CUST1081,1299,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0376,CUST1173,13307,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0377,CUST1143,7184,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0378,CUST1101,677,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0379,CUST1001,11745,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0380,CUST1147,1866,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0381,CUST1067,11187,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0382,CUST1100,9816,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0383,CUST1172,11765,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0384,CUST1029,3198,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0385,CUST1147,6485,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0386,CUST1044,9290,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0387,CUST1158,1077,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0388,CUST1143,8480,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0389,CUST1125,2939,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0390,CUST1070,3882,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0391,CUST1140,8568,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0392,CUST1138,13676,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0393,CUST1192,4254,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0394,CUST1112,14375,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0395,CUST1181,10197,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0396,CUST1052,13395,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0397,CUST1043,5501,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0398,CUST1173,13554,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0399,CUST1032,11691,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0400,CUST1194,14019,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0401,CUST1160,6985,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0402,CUST1191,4757,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0403,CUST1000,14435,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0404,CUST1101,3767,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0405,CUST1086,9166,failed,card_declined,2,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0406,CUST1011,1830,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0407,CUST1000,7208,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0408,CUST1023,10923,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0409,CUST1042,1047,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0410,CUST1000,3695,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0411,CUST1002,331,failed,card_declined,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0412,CUST1098,1662,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0413,CUST1035,6469,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0414,CUST1166,2887,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0415,CUST1055,1619,failed,authentication_failed,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0416,CUST1035,4258,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0417,CUST1072,12961,failed,network_error,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0418,CUST1048,12451,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0419,CUST1127,10653,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0420,CUST1033,6536,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0421,CUST1197,1394,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0422,CUST1015,13130,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0423,CUST1108,11697,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0424,CUST1020,8576,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0425,CUST1195,13871,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0426,CUST1014,4204,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0427,CUST1079,11112,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0428,CUST1041,8332,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0429,CUST1095,2278,failed,insufficient_balance,0,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0430,CUST1069,8781,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0431,CUST1092,1107,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0432,CUST1146,11243,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0433,CUST1003,4205,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0434,CUST1141,13357,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0435,CUST1069,13732,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0436,CUST1045,3855,abandoned,checkout_abandoned,0,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0437,CUST1198,14040,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0438,CUST1051,4976,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0439,CUST1197,12911,failed,bank_timeout,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0440,CUST1006,4016,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0441,CUST1096,14109,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0442,CUST1125,1180,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0443,CUST1105,11681,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0444,CUST1034,10639,failed,insufficient_balance,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0445,CUST1074,4475,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0446,CUST1019,3520,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0447,CUST1119,5344,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0448,CUST1118,4540,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0449,CUST1010,3721,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0450,CUST1131,1001,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0451,CUST1115,9307,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0452,CUST1031,394,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0453,CUST1165,1575,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0454,CUST1050,14985,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0455,CUST1012,2951,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0456,CUST1044,5998,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0457,CUST1008,10260,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0458,CUST1140,8047,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0459,CUST1164,14693,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0460,CUST1122,9120,abandoned,checkout_abandoned,2,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0461,CUST1006,5423,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0462,CUST1135,6055,abandoned,checkout_abandoned,0,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0463,CUST1068,8942,failed,bank_timeout,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0464,CUST1045,4074,failed,network_error,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0465,CUST1145,9433,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0466,CUST1125,820,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0467,CUST1122,210,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0468,CUST1082,1174,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0469,CUST1018,6319,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0470,CUST1187,7356,failed,bank_timeout,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0471,CUST1044,6398,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0472,CUST1100,14137,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0473,CUST1056,10678,abandoned,checkout_abandoned,1,PRIORITY_REMINDER,HIGH,Premium customer abandoned checkout.,True
+TXN0474,CUST1060,5881,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0475,CUST1053,4287,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0476,CUST1012,6522,abandoned,checkout_abandoned,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0477,CUST1089,9145,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0478,CUST1008,5030,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0479,CUST1043,14746,failed,authentication_failed,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0480,CUST1123,11741,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0481,CUST1040,1076,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0482,CUST1184,12158,failed,network_error,1,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0483,CUST1146,9204,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0484,CUST1075,13697,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0485,CUST1043,10655,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0486,CUST1120,8212,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0487,CUST1094,14706,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0488,CUST1119,4514,failed,bank_timeout,0,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0489,CUST1138,6981,failed,card_declined,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0490,CUST1146,14644,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0491,CUST1128,9557,failed,authentication_failed,1,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0492,CUST1044,2937,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0493,CUST1051,13675,failed,network_error,2,RETRY_PAYMENT,MEDIUM,Failure appears temporary and retry may succeed.,True
+TXN0494,CUST1022,6557,failed,network_error,3,STOP,HIGH,Maximum retry limit reached.,False
+TXN0495,CUST1150,8760,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0496,CUST1149,12624,failed,insufficient_balance,2,PAYMENT_REMINDER,HIGH,Customer may need to add funds before retrying.,True
+TXN0497,CUST1105,4526,failed,card_declined,0,ALTERNATIVE_PAYMENT,MEDIUM,Current payment method failed; suggest another method.,True
+TXN0498,CUST1036,10328,success,none,0,NO_ACTION,LOW,Payment already completed.,False
+TXN0499,CUST1012,12417,abandoned,checkout_abandoned,0,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True
+TXN0500,CUST1079,4792,abandoned,checkout_abandoned,1,PAYMENT_REMINDER,MEDIUM,Customer abandoned checkout.,True

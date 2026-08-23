@@ -1,0 +1,501 @@
+transaction_id,amount,risk_score,risk_level,revenue_at_risk,reasons
+TXN0001,2023.0,0,LOW,0.0,[]
+TXN0002,12334.0,50,MEDIUM,12334.0,['Payment failed']
+TXN0003,10062.0,0,LOW,0.0,[]
+TXN0004,3810.0,0,LOW,0.0,[]
+TXN0005,7123.0,0,LOW,0.0,[]
+TXN0006,1783.0,70,HIGH,1783.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0007,9243.0,60,MEDIUM,9243.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0008,11033.0,40,MEDIUM,11033.0,['Checkout was abandoned']
+TXN0009,10614.0,0,LOW,0.0,[]
+TXN0010,11398.0,50,MEDIUM,11398.0,['Payment failed']
+TXN0011,10684.0,0,LOW,0.0,[]
+TXN0012,13663.0,0,LOW,0.0,[]
+TXN0013,5354.0,0,LOW,0.0,[]
+TXN0014,2486.0,0,LOW,0.0,[]
+TXN0015,6742.0,40,MEDIUM,6742.0,['Checkout was abandoned']
+TXN0016,970.0,50,MEDIUM,970.0,['Payment failed']
+TXN0017,8868.0,40,MEDIUM,8868.0,['Checkout was abandoned']
+TXN0018,14695.0,50,MEDIUM,14695.0,['Payment failed']
+TXN0019,252.0,40,MEDIUM,252.0,['Checkout was abandoned']
+TXN0020,5088.0,70,HIGH,5088.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0021,10012.0,0,LOW,0.0,[]
+TXN0022,1148.0,40,MEDIUM,1148.0,['Checkout was abandoned']
+TXN0023,8926.0,50,MEDIUM,8926.0,['Payment failed']
+TXN0024,3669.0,70,HIGH,3669.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0025,2181.0,0,LOW,0.0,[]
+TXN0026,9840.0,0,LOW,0.0,[]
+TXN0027,713.0,0,LOW,0.0,[]
+TXN0028,9033.0,70,HIGH,9033.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0029,10995.0,0,LOW,0.0,[]
+TXN0030,10905.0,0,LOW,0.0,[]
+TXN0031,3338.0,0,LOW,0.0,[]
+TXN0032,4291.0,50,MEDIUM,4291.0,['Payment failed']
+TXN0033,1727.0,0,LOW,0.0,[]
+TXN0034,2896.0,60,MEDIUM,2896.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0035,12167.0,0,LOW,0.0,[]
+TXN0036,12253.0,50,MEDIUM,12253.0,['Payment failed']
+TXN0037,2778.0,0,LOW,0.0,[]
+TXN0038,11261.0,0,LOW,0.0,[]
+TXN0039,850.0,0,LOW,0.0,[]
+TXN0040,4471.0,0,LOW,0.0,[]
+TXN0041,7690.0,0,LOW,0.0,[]
+TXN0042,9007.0,0,LOW,0.0,[]
+TXN0043,6253.0,0,LOW,0.0,[]
+TXN0044,13422.0,0,LOW,0.0,[]
+TXN0045,4532.0,70,HIGH,4532.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0046,5816.0,0,LOW,0.0,[]
+TXN0047,10591.0,0,LOW,0.0,[]
+TXN0048,4490.0,50,MEDIUM,4490.0,['Payment failed']
+TXN0049,789.0,50,MEDIUM,789.0,['Payment failed']
+TXN0050,14926.0,70,HIGH,14926.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0051,12478.0,40,MEDIUM,12478.0,['Checkout was abandoned']
+TXN0052,5641.0,0,LOW,0.0,[]
+TXN0053,14266.0,0,LOW,0.0,[]
+TXN0054,3851.0,0,LOW,0.0,[]
+TXN0055,4772.0,0,LOW,0.0,[]
+TXN0056,14568.0,50,MEDIUM,14568.0,['Payment failed']
+TXN0057,12135.0,50,MEDIUM,12135.0,['Payment failed']
+TXN0058,4372.0,0,LOW,0.0,[]
+TXN0059,7265.0,70,HIGH,7265.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0060,6791.0,70,HIGH,6791.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0061,12456.0,50,MEDIUM,12456.0,['Payment failed']
+TXN0062,13072.0,70,HIGH,13072.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0063,7951.0,70,HIGH,7951.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0064,5284.0,0,LOW,0.0,[]
+TXN0065,14121.0,0,LOW,0.0,[]
+TXN0066,11608.0,0,LOW,0.0,[]
+TXN0067,14296.0,0,LOW,0.0,[]
+TXN0068,9331.0,0,LOW,0.0,[]
+TXN0069,9954.0,70,HIGH,9954.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0070,14313.0,0,LOW,0.0,[]
+TXN0071,12746.0,70,HIGH,12746.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0072,4650.0,40,MEDIUM,4650.0,['Checkout was abandoned']
+TXN0073,11568.0,0,LOW,0.0,[]
+TXN0074,7011.0,50,MEDIUM,7011.0,['Payment failed']
+TXN0075,5962.0,60,MEDIUM,5962.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0076,14908.0,0,LOW,0.0,[]
+TXN0077,5706.0,50,MEDIUM,5706.0,['Payment failed']
+TXN0078,9896.0,0,LOW,0.0,[]
+TXN0079,1022.0,0,LOW,0.0,[]
+TXN0080,14611.0,70,HIGH,14611.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0081,9036.0,0,LOW,0.0,[]
+TXN0082,12556.0,0,LOW,0.0,[]
+TXN0083,2267.0,70,HIGH,2267.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0084,10125.0,70,HIGH,10125.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0085,9632.0,0,LOW,0.0,[]
+TXN0086,11514.0,0,LOW,0.0,[]
+TXN0087,13244.0,0,LOW,0.0,[]
+TXN0088,8488.0,0,LOW,0.0,[]
+TXN0089,7301.0,50,MEDIUM,7301.0,['Payment failed']
+TXN0090,10290.0,0,LOW,0.0,[]
+TXN0091,14153.0,0,LOW,0.0,[]
+TXN0092,10198.0,0,LOW,0.0,[]
+TXN0093,8187.0,70,HIGH,8187.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0094,365.0,0,LOW,0.0,[]
+TXN0095,12620.0,70,HIGH,12620.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0096,6824.0,0,LOW,0.0,[]
+TXN0097,8897.0,60,MEDIUM,8897.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0098,5222.0,0,LOW,0.0,[]
+TXN0099,8978.0,0,LOW,0.0,[]
+TXN0100,9858.0,0,LOW,0.0,[]
+TXN0101,3926.0,0,LOW,0.0,[]
+TXN0102,944.0,0,LOW,0.0,[]
+TXN0103,14497.0,0,LOW,0.0,[]
+TXN0104,1040.0,0,LOW,0.0,[]
+TXN0105,9652.0,0,LOW,0.0,[]
+TXN0106,4265.0,50,MEDIUM,4265.0,['Payment failed']
+TXN0107,5070.0,0,LOW,0.0,[]
+TXN0108,1824.0,0,LOW,0.0,[]
+TXN0109,9242.0,0,LOW,0.0,[]
+TXN0110,4970.0,0,LOW,0.0,[]
+TXN0111,11461.0,50,MEDIUM,11461.0,['Payment failed']
+TXN0112,10809.0,50,MEDIUM,10809.0,['Payment failed']
+TXN0113,12469.0,0,LOW,0.0,[]
+TXN0114,6793.0,0,LOW,0.0,[]
+TXN0115,14771.0,50,MEDIUM,14771.0,['Payment failed']
+TXN0116,538.0,70,HIGH,538.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0117,3172.0,50,MEDIUM,3172.0,['Payment failed']
+TXN0118,5459.0,60,MEDIUM,5459.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0119,11054.0,0,LOW,0.0,[]
+TXN0120,2098.0,70,HIGH,2098.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0121,6126.0,50,MEDIUM,6126.0,['Payment failed']
+TXN0122,7377.0,0,LOW,0.0,[]
+TXN0123,2793.0,0,LOW,0.0,[]
+TXN0124,7759.0,0,LOW,0.0,[]
+TXN0125,4678.0,40,MEDIUM,4678.0,['Checkout was abandoned']
+TXN0126,3321.0,50,MEDIUM,3321.0,['Payment failed']
+TXN0127,13104.0,70,HIGH,13104.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0128,7515.0,0,LOW,0.0,[]
+TXN0129,7659.0,40,MEDIUM,7659.0,['Checkout was abandoned']
+TXN0130,6929.0,70,HIGH,6929.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0131,8314.0,0,LOW,0.0,[]
+TXN0132,1832.0,0,LOW,0.0,[]
+TXN0133,1424.0,0,LOW,0.0,[]
+TXN0134,14154.0,0,LOW,0.0,[]
+TXN0135,787.0,0,LOW,0.0,[]
+TXN0136,12434.0,40,MEDIUM,12434.0,['Checkout was abandoned']
+TXN0137,952.0,0,LOW,0.0,[]
+TXN0138,8901.0,50,MEDIUM,8901.0,['Payment failed']
+TXN0139,10352.0,0,LOW,0.0,[]
+TXN0140,10650.0,0,LOW,0.0,[]
+TXN0141,11300.0,0,LOW,0.0,[]
+TXN0142,7150.0,0,LOW,0.0,[]
+TXN0143,1946.0,70,HIGH,1946.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0144,6683.0,70,HIGH,6683.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0145,13337.0,70,HIGH,13337.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0146,13934.0,40,MEDIUM,13934.0,['Checkout was abandoned']
+TXN0147,9694.0,0,LOW,0.0,[]
+TXN0148,3488.0,60,MEDIUM,3488.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0149,4409.0,50,MEDIUM,4409.0,['Payment failed']
+TXN0150,3895.0,60,MEDIUM,3895.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0151,4531.0,0,LOW,0.0,[]
+TXN0152,6441.0,0,LOW,0.0,[]
+TXN0153,14686.0,40,MEDIUM,14686.0,['Checkout was abandoned']
+TXN0154,11685.0,0,LOW,0.0,[]
+TXN0155,8270.0,0,LOW,0.0,[]
+TXN0156,6277.0,0,LOW,0.0,[]
+TXN0157,10929.0,50,MEDIUM,10929.0,['Payment failed']
+TXN0158,7484.0,0,LOW,0.0,[]
+TXN0159,6075.0,0,LOW,0.0,[]
+TXN0160,11057.0,40,MEDIUM,11057.0,['Checkout was abandoned']
+TXN0161,3561.0,0,LOW,0.0,[]
+TXN0162,12886.0,0,LOW,0.0,[]
+TXN0163,13281.0,50,MEDIUM,13281.0,['Payment failed']
+TXN0164,5503.0,0,LOW,0.0,[]
+TXN0165,2061.0,0,LOW,0.0,[]
+TXN0166,7604.0,40,MEDIUM,7604.0,['Checkout was abandoned']
+TXN0167,5140.0,0,LOW,0.0,[]
+TXN0168,11440.0,50,MEDIUM,11440.0,['Payment failed']
+TXN0169,1275.0,70,HIGH,1275.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0170,7632.0,0,LOW,0.0,[]
+TXN0171,14579.0,0,LOW,0.0,[]
+TXN0172,6731.0,0,LOW,0.0,[]
+TXN0173,2699.0,0,LOW,0.0,[]
+TXN0174,12398.0,50,MEDIUM,12398.0,['Payment failed']
+TXN0175,11176.0,0,LOW,0.0,[]
+TXN0176,1041.0,0,LOW,0.0,[]
+TXN0177,2734.0,0,LOW,0.0,[]
+TXN0178,2081.0,0,LOW,0.0,[]
+TXN0179,13608.0,50,MEDIUM,13608.0,['Payment failed']
+TXN0180,4580.0,0,LOW,0.0,[]
+TXN0181,299.0,50,MEDIUM,299.0,['Payment failed']
+TXN0182,1702.0,0,LOW,0.0,[]
+TXN0183,6261.0,50,MEDIUM,6261.0,['Payment failed']
+TXN0184,10321.0,0,LOW,0.0,[]
+TXN0185,7441.0,0,LOW,0.0,[]
+TXN0186,2015.0,0,LOW,0.0,[]
+TXN0187,6674.0,0,LOW,0.0,[]
+TXN0188,2447.0,0,LOW,0.0,[]
+TXN0189,2315.0,70,HIGH,2315.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0190,506.0,60,MEDIUM,506.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0191,4942.0,0,LOW,0.0,[]
+TXN0192,13830.0,0,LOW,0.0,[]
+TXN0193,6759.0,0,LOW,0.0,[]
+TXN0194,5655.0,0,LOW,0.0,[]
+TXN0195,12916.0,50,MEDIUM,12916.0,['Payment failed']
+TXN0196,3041.0,50,MEDIUM,3041.0,['Payment failed']
+TXN0197,9435.0,70,HIGH,9435.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0198,1317.0,50,MEDIUM,1317.0,['Payment failed']
+TXN0199,7764.0,0,LOW,0.0,[]
+TXN0200,10275.0,0,LOW,0.0,[]
+TXN0201,13467.0,0,LOW,0.0,[]
+TXN0202,7580.0,40,MEDIUM,7580.0,['Checkout was abandoned']
+TXN0203,4258.0,40,MEDIUM,4258.0,['Checkout was abandoned']
+TXN0204,6896.0,0,LOW,0.0,[]
+TXN0205,5600.0,70,HIGH,5600.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0206,14506.0,0,LOW,0.0,[]
+TXN0207,10947.0,0,LOW,0.0,[]
+TXN0208,9356.0,50,MEDIUM,9356.0,['Payment failed']
+TXN0209,6127.0,0,LOW,0.0,[]
+TXN0210,3910.0,0,LOW,0.0,[]
+TXN0211,14677.0,50,MEDIUM,14677.0,['Payment failed']
+TXN0212,3161.0,70,HIGH,3161.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0213,11988.0,50,MEDIUM,11988.0,['Payment failed']
+TXN0214,13881.0,70,HIGH,13881.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0215,6455.0,0,LOW,0.0,[]
+TXN0216,2466.0,50,MEDIUM,2466.0,['Payment failed']
+TXN0217,4869.0,0,LOW,0.0,[]
+TXN0218,3836.0,60,MEDIUM,3836.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0219,4061.0,0,LOW,0.0,[]
+TXN0220,10847.0,0,LOW,0.0,[]
+TXN0221,13815.0,0,LOW,0.0,[]
+TXN0222,4392.0,0,LOW,0.0,[]
+TXN0223,2020.0,0,LOW,0.0,[]
+TXN0224,13206.0,0,LOW,0.0,[]
+TXN0225,10552.0,0,LOW,0.0,[]
+TXN0226,10272.0,50,MEDIUM,10272.0,['Payment failed']
+TXN0227,9113.0,70,HIGH,9113.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0228,4354.0,0,LOW,0.0,[]
+TXN0229,10964.0,50,MEDIUM,10964.0,['Payment failed']
+TXN0230,13527.0,70,HIGH,13527.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0231,11930.0,0,LOW,0.0,[]
+TXN0232,5369.0,0,LOW,0.0,[]
+TXN0233,12540.0,0,LOW,0.0,[]
+TXN0234,4675.0,0,LOW,0.0,[]
+TXN0235,5753.0,70,HIGH,5753.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0236,7254.0,0,LOW,0.0,[]
+TXN0237,11027.0,0,LOW,0.0,[]
+TXN0238,7471.0,0,LOW,0.0,[]
+TXN0239,10676.0,70,HIGH,10676.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0240,2538.0,0,LOW,0.0,[]
+TXN0241,6132.0,0,LOW,0.0,[]
+TXN0242,6294.0,70,HIGH,6294.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0243,4288.0,70,HIGH,4288.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0244,4463.0,0,LOW,0.0,[]
+TXN0245,2208.0,0,LOW,0.0,[]
+TXN0246,14052.0,70,HIGH,14052.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0247,11824.0,50,MEDIUM,11824.0,['Payment failed']
+TXN0248,13148.0,0,LOW,0.0,[]
+TXN0249,2325.0,0,LOW,0.0,[]
+TXN0250,6929.0,0,LOW,0.0,[]
+TXN0251,7831.0,0,LOW,0.0,[]
+TXN0252,12778.0,0,LOW,0.0,[]
+TXN0253,2706.0,0,LOW,0.0,[]
+TXN0254,14861.0,0,LOW,0.0,[]
+TXN0255,10439.0,0,LOW,0.0,[]
+TXN0256,9712.0,70,HIGH,9712.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0257,943.0,0,LOW,0.0,[]
+TXN0258,10326.0,0,LOW,0.0,[]
+TXN0259,5148.0,70,HIGH,5148.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0260,7401.0,0,LOW,0.0,[]
+TXN0261,14313.0,70,HIGH,14313.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0262,9401.0,0,LOW,0.0,[]
+TXN0263,2507.0,0,LOW,0.0,[]
+TXN0264,4266.0,60,MEDIUM,4266.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0265,8632.0,60,MEDIUM,8632.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0266,7690.0,50,MEDIUM,7690.0,['Payment failed']
+TXN0267,11217.0,0,LOW,0.0,[]
+TXN0268,12118.0,0,LOW,0.0,[]
+TXN0269,3388.0,0,LOW,0.0,[]
+TXN0270,9207.0,50,MEDIUM,9207.0,['Payment failed']
+TXN0271,9338.0,0,LOW,0.0,[]
+TXN0272,941.0,70,HIGH,941.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0273,5572.0,0,LOW,0.0,[]
+TXN0274,5710.0,0,LOW,0.0,[]
+TXN0275,13564.0,0,LOW,0.0,[]
+TXN0276,13253.0,50,MEDIUM,13253.0,['Payment failed']
+TXN0277,2992.0,50,MEDIUM,2992.0,['Payment failed']
+TXN0278,11676.0,0,LOW,0.0,[]
+TXN0279,11512.0,0,LOW,0.0,[]
+TXN0280,12116.0,0,LOW,0.0,[]
+TXN0281,6372.0,0,LOW,0.0,[]
+TXN0282,11272.0,50,MEDIUM,11272.0,['Payment failed']
+TXN0283,5075.0,70,HIGH,5075.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0284,4679.0,70,HIGH,4679.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0285,13381.0,0,LOW,0.0,[]
+TXN0286,10946.0,0,LOW,0.0,[]
+TXN0287,4649.0,50,MEDIUM,4649.0,['Payment failed']
+TXN0288,10651.0,0,LOW,0.0,[]
+TXN0289,11359.0,40,MEDIUM,11359.0,['Checkout was abandoned']
+TXN0290,10857.0,0,LOW,0.0,[]
+TXN0291,9605.0,50,MEDIUM,9605.0,['Payment failed']
+TXN0292,13899.0,0,LOW,0.0,[]
+TXN0293,350.0,70,HIGH,350.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0294,8291.0,0,LOW,0.0,[]
+TXN0295,2861.0,50,MEDIUM,2861.0,['Payment failed']
+TXN0296,11248.0,70,HIGH,11248.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0297,11164.0,60,MEDIUM,11164.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0298,4471.0,0,LOW,0.0,[]
+TXN0299,12042.0,0,LOW,0.0,[]
+TXN0300,11140.0,0,LOW,0.0,[]
+TXN0301,12812.0,70,HIGH,12812.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0302,8033.0,70,HIGH,8033.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0303,12607.0,50,MEDIUM,12607.0,['Payment failed']
+TXN0304,6126.0,0,LOW,0.0,[]
+TXN0305,9582.0,0,LOW,0.0,[]
+TXN0306,3564.0,0,LOW,0.0,[]
+TXN0307,2360.0,0,LOW,0.0,[]
+TXN0308,13419.0,0,LOW,0.0,[]
+TXN0309,1395.0,0,LOW,0.0,[]
+TXN0310,7933.0,0,LOW,0.0,[]
+TXN0311,10781.0,60,MEDIUM,10781.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0312,1513.0,0,LOW,0.0,[]
+TXN0313,6638.0,50,MEDIUM,6638.0,['Payment failed']
+TXN0314,11980.0,0,LOW,0.0,[]
+TXN0315,2740.0,40,MEDIUM,2740.0,['Checkout was abandoned']
+TXN0316,12750.0,0,LOW,0.0,[]
+TXN0317,9993.0,0,LOW,0.0,[]
+TXN0318,9042.0,0,LOW,0.0,[]
+TXN0319,9660.0,0,LOW,0.0,[]
+TXN0320,6974.0,0,LOW,0.0,[]
+TXN0321,11319.0,0,LOW,0.0,[]
+TXN0322,6443.0,50,MEDIUM,6443.0,['Payment failed']
+TXN0323,9012.0,50,MEDIUM,9012.0,['Payment failed']
+TXN0324,6960.0,0,LOW,0.0,[]
+TXN0325,5610.0,60,MEDIUM,5610.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0326,4597.0,50,MEDIUM,4597.0,['Payment failed']
+TXN0327,8053.0,0,LOW,0.0,[]
+TXN0328,2121.0,40,MEDIUM,2121.0,['Checkout was abandoned']
+TXN0329,5468.0,0,LOW,0.0,[]
+TXN0330,6091.0,0,LOW,0.0,[]
+TXN0331,6272.0,0,LOW,0.0,[]
+TXN0332,4471.0,70,HIGH,4471.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0333,6422.0,0,LOW,0.0,[]
+TXN0334,12705.0,0,LOW,0.0,[]
+TXN0335,2492.0,0,LOW,0.0,[]
+TXN0336,753.0,50,MEDIUM,753.0,['Payment failed']
+TXN0337,2673.0,0,LOW,0.0,[]
+TXN0338,11123.0,50,MEDIUM,11123.0,['Payment failed']
+TXN0339,473.0,0,LOW,0.0,[]
+TXN0340,11242.0,0,LOW,0.0,[]
+TXN0341,3343.0,0,LOW,0.0,[]
+TXN0342,6311.0,70,HIGH,6311.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0343,14260.0,0,LOW,0.0,[]
+TXN0344,1118.0,70,HIGH,1118.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0345,14255.0,40,MEDIUM,14255.0,['Checkout was abandoned']
+TXN0346,4640.0,50,MEDIUM,4640.0,['Payment failed']
+TXN0347,3593.0,50,MEDIUM,3593.0,['Payment failed']
+TXN0348,9483.0,0,LOW,0.0,[]
+TXN0349,12412.0,0,LOW,0.0,[]
+TXN0350,10114.0,0,LOW,0.0,[]
+TXN0351,13036.0,0,LOW,0.0,[]
+TXN0352,3242.0,70,HIGH,3242.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0353,4589.0,70,HIGH,4589.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0354,284.0,0,LOW,0.0,[]
+TXN0355,3269.0,70,HIGH,3269.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0356,9279.0,70,HIGH,9279.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0357,12964.0,40,MEDIUM,12964.0,['Checkout was abandoned']
+TXN0358,6436.0,0,LOW,0.0,[]
+TXN0359,2938.0,0,LOW,0.0,[]
+TXN0360,4322.0,70,HIGH,4322.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0361,6682.0,0,LOW,0.0,[]
+TXN0362,13559.0,0,LOW,0.0,[]
+TXN0363,5346.0,60,MEDIUM,5346.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0364,9634.0,0,LOW,0.0,[]
+TXN0365,3472.0,0,LOW,0.0,[]
+TXN0366,3633.0,70,HIGH,3633.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0367,5160.0,70,HIGH,5160.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0368,9738.0,0,LOW,0.0,[]
+TXN0369,13154.0,50,MEDIUM,13154.0,['Payment failed']
+TXN0370,10799.0,70,HIGH,10799.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0371,4438.0,50,MEDIUM,4438.0,['Payment failed']
+TXN0372,12853.0,70,HIGH,12853.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0373,7014.0,70,HIGH,7014.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0374,8736.0,0,LOW,0.0,[]
+TXN0375,1299.0,50,MEDIUM,1299.0,['Payment failed']
+TXN0376,13307.0,0,LOW,0.0,[]
+TXN0377,7184.0,50,MEDIUM,7184.0,['Payment failed']
+TXN0378,677.0,60,MEDIUM,677.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0379,11745.0,0,LOW,0.0,[]
+TXN0380,1866.0,0,LOW,0.0,[]
+TXN0381,11187.0,60,MEDIUM,11187.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0382,9816.0,0,LOW,0.0,[]
+TXN0383,11765.0,70,HIGH,11765.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0384,3198.0,0,LOW,0.0,[]
+TXN0385,6485.0,0,LOW,0.0,[]
+TXN0386,9290.0,0,LOW,0.0,[]
+TXN0387,1077.0,0,LOW,0.0,[]
+TXN0388,8480.0,0,LOW,0.0,[]
+TXN0389,2939.0,0,LOW,0.0,[]
+TXN0390,3882.0,0,LOW,0.0,[]
+TXN0391,8568.0,0,LOW,0.0,[]
+TXN0392,13676.0,0,LOW,0.0,[]
+TXN0393,4254.0,0,LOW,0.0,[]
+TXN0394,14375.0,0,LOW,0.0,[]
+TXN0395,10197.0,0,LOW,0.0,[]
+TXN0396,13395.0,0,LOW,0.0,[]
+TXN0397,5501.0,0,LOW,0.0,[]
+TXN0398,13554.0,60,MEDIUM,13554.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0399,11691.0,0,LOW,0.0,[]
+TXN0400,14019.0,0,LOW,0.0,[]
+TXN0401,6985.0,0,LOW,0.0,[]
+TXN0402,4757.0,0,LOW,0.0,[]
+TXN0403,14435.0,70,HIGH,14435.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0404,3767.0,0,LOW,0.0,[]
+TXN0405,9166.0,70,HIGH,9166.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0406,1830.0,0,LOW,0.0,[]
+TXN0407,7208.0,60,MEDIUM,7208.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0408,10923.0,0,LOW,0.0,[]
+TXN0409,1047.0,70,HIGH,1047.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0410,3695.0,0,LOW,0.0,[]
+TXN0411,331.0,50,MEDIUM,331.0,['Payment failed']
+TXN0412,1662.0,0,LOW,0.0,[]
+TXN0413,6469.0,0,LOW,0.0,[]
+TXN0414,2887.0,70,HIGH,2887.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0415,1619.0,70,HIGH,1619.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0416,4258.0,0,LOW,0.0,[]
+TXN0417,12961.0,50,MEDIUM,12961.0,['Payment failed']
+TXN0418,12451.0,70,HIGH,12451.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0419,10653.0,0,LOW,0.0,[]
+TXN0420,6536.0,0,LOW,0.0,[]
+TXN0421,1394.0,0,LOW,0.0,[]
+TXN0422,13130.0,0,LOW,0.0,[]
+TXN0423,11697.0,50,MEDIUM,11697.0,['Payment failed']
+TXN0424,8576.0,0,LOW,0.0,[]
+TXN0425,13871.0,0,LOW,0.0,[]
+TXN0426,4204.0,0,LOW,0.0,[]
+TXN0427,11112.0,0,LOW,0.0,[]
+TXN0428,8332.0,0,LOW,0.0,[]
+TXN0429,2278.0,50,MEDIUM,2278.0,['Payment failed']
+TXN0430,8781.0,50,MEDIUM,8781.0,['Payment failed']
+TXN0431,1107.0,0,LOW,0.0,[]
+TXN0432,11243.0,0,LOW,0.0,[]
+TXN0433,4205.0,0,LOW,0.0,[]
+TXN0434,13357.0,0,LOW,0.0,[]
+TXN0435,13732.0,0,LOW,0.0,[]
+TXN0436,3855.0,40,MEDIUM,3855.0,['Checkout was abandoned']
+TXN0437,14040.0,0,LOW,0.0,[]
+TXN0438,4976.0,70,HIGH,4976.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0439,12911.0,50,MEDIUM,12911.0,['Payment failed']
+TXN0440,4016.0,70,HIGH,4016.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0441,14109.0,0,LOW,0.0,[]
+TXN0442,1180.0,0,LOW,0.0,[]
+TXN0443,11681.0,40,MEDIUM,11681.0,['Checkout was abandoned']
+TXN0444,10639.0,70,HIGH,10639.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0445,4475.0,70,HIGH,4475.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0446,3520.0,0,LOW,0.0,[]
+TXN0447,5344.0,0,LOW,0.0,[]
+TXN0448,4540.0,0,LOW,0.0,[]
+TXN0449,3721.0,0,LOW,0.0,[]
+TXN0450,1001.0,0,LOW,0.0,[]
+TXN0451,9307.0,0,LOW,0.0,[]
+TXN0452,394.0,0,LOW,0.0,[]
+TXN0453,1575.0,0,LOW,0.0,[]
+TXN0454,14985.0,70,HIGH,14985.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0455,2951.0,70,HIGH,2951.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0456,5998.0,0,LOW,0.0,[]
+TXN0457,10260.0,0,LOW,0.0,[]
+TXN0458,8047.0,0,LOW,0.0,[]
+TXN0459,14693.0,50,MEDIUM,14693.0,['Payment failed']
+TXN0460,9120.0,60,MEDIUM,9120.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0461,5423.0,0,LOW,0.0,[]
+TXN0462,6055.0,40,MEDIUM,6055.0,['Checkout was abandoned']
+TXN0463,8942.0,70,HIGH,8942.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0464,4074.0,50,MEDIUM,4074.0,['Payment failed']
+TXN0465,9433.0,60,MEDIUM,9433.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0466,820.0,0,LOW,0.0,[]
+TXN0467,210.0,0,LOW,0.0,[]
+TXN0468,1174.0,50,MEDIUM,1174.0,['Payment failed']
+TXN0469,6319.0,70,HIGH,6319.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0470,7356.0,70,HIGH,7356.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0471,6398.0,0,LOW,0.0,[]
+TXN0472,14137.0,0,LOW,0.0,[]
+TXN0473,10678.0,40,MEDIUM,10678.0,['Checkout was abandoned']
+TXN0474,5881.0,70,HIGH,5881.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0475,4287.0,0,LOW,0.0,[]
+TXN0476,6522.0,60,MEDIUM,6522.0,"['Checkout was abandoned', 'Multiple recovery attempts already made']"
+TXN0477,9145.0,50,MEDIUM,9145.0,['Payment failed']
+TXN0478,5030.0,0,LOW,0.0,[]
+TXN0479,14746.0,50,MEDIUM,14746.0,['Payment failed']
+TXN0480,11741.0,40,MEDIUM,11741.0,['Checkout was abandoned']
+TXN0481,1076.0,0,LOW,0.0,[]
+TXN0482,12158.0,50,MEDIUM,12158.0,['Payment failed']
+TXN0483,9204.0,0,LOW,0.0,[]
+TXN0484,13697.0,0,LOW,0.0,[]
+TXN0485,10655.0,0,LOW,0.0,[]
+TXN0486,8212.0,0,LOW,0.0,[]
+TXN0487,14706.0,0,LOW,0.0,[]
+TXN0488,4514.0,50,MEDIUM,4514.0,['Payment failed']
+TXN0489,6981.0,70,HIGH,6981.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0490,14644.0,0,LOW,0.0,[]
+TXN0491,9557.0,50,MEDIUM,9557.0,['Payment failed']
+TXN0492,2937.0,0,LOW,0.0,[]
+TXN0493,13675.0,70,HIGH,13675.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0494,6557.0,70,HIGH,6557.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0495,8760.0,0,LOW,0.0,[]
+TXN0496,12624.0,70,HIGH,12624.0,"['Payment failed', 'Multiple recovery attempts already made']"
+TXN0497,4526.0,50,MEDIUM,4526.0,['Payment failed']
+TXN0498,10328.0,0,LOW,0.0,[]
+TXN0499,12417.0,40,MEDIUM,12417.0,['Checkout was abandoned']
+TXN0500,4792.0,40,MEDIUM,4792.0,['Checkout was abandoned']

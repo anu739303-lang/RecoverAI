@@ -1,0 +1,501 @@
+transaction_id,customer_id,amount,payment_status,failure_reason,retry_count,customer_type,payment_method,subscription_status,days_since_last_payment,transaction_time
+TXN0001,CUST1163,2023,success,none,0,new,Debit Card,active,47,2026-08-05 15:57:00
+TXN0002,CUST1173,12334,failed,insufficient_balance,0,premium,UPI,active,13,2026-08-11 14:07:00
+TXN0003,CUST1129,10062,success,none,0,new,Wallet,not_applicable,44,2026-08-25 19:13:00
+TXN0004,CUST1107,3810,success,none,0,returning,Wallet,active,48,2026-08-08 06:23:00
+TXN0005,CUST1178,7123,success,none,0,returning,Debit Card,inactive,6,2026-08-05 05:18:00
+TXN0006,CUST1097,1783,failed,insufficient_balance,3,returning,Debit Card,not_applicable,7,2026-08-18 05:27:00
+TXN0007,CUST1020,9243,abandoned,checkout_abandoned,2,returning,Wallet,not_applicable,12,2026-08-04 03:58:00
+TXN0008,CUST1011,11033,abandoned,checkout_abandoned,1,new,Debit Card,active,24,2026-08-13 15:37:00
+TXN0009,CUST1116,10614,success,none,0,returning,Credit Card,active,42,2026-08-13 03:36:00
+TXN0010,CUST1179,11398,failed,bank_timeout,1,premium,UPI,active,29,2026-08-18 06:27:00
+TXN0011,CUST1069,10684,success,none,0,premium,Wallet,active,53,2026-08-03 13:05:00
+TXN0012,CUST1058,13663,success,none,0,new,Debit Card,active,13,2026-08-26 19:30:00
+TXN0013,CUST1183,5354,success,none,0,new,Net Banking,not_applicable,29,2026-08-07 12:03:00
+TXN0014,CUST1067,2486,success,none,0,new,Wallet,not_applicable,37,2026-08-20 11:57:00
+TXN0015,CUST1149,6742,abandoned,checkout_abandoned,1,returning,Credit Card,not_applicable,31,2026-08-05 03:17:00
+TXN0016,CUST1193,970,failed,card_declined,0,new,Credit Card,inactive,24,2026-08-28 02:52:00
+TXN0017,CUST1119,8868,abandoned,checkout_abandoned,0,returning,Wallet,not_applicable,46,2026-08-06 05:07:00
+TXN0018,CUST1174,14695,failed,network_error,0,premium,Debit Card,active,27,2026-08-08 04:45:00
+TXN0019,CUST1116,252,abandoned,checkout_abandoned,1,premium,Debit Card,inactive,58,2026-08-05 20:13:00
+TXN0020,CUST1160,5088,failed,bank_timeout,2,premium,Wallet,active,34,2026-08-25 03:17:00
+TXN0021,CUST1000,10012,success,none,0,returning,Net Banking,inactive,56,2026-08-14 23:53:00
+TXN0022,CUST1061,1148,abandoned,checkout_abandoned,0,new,Wallet,not_applicable,31,2026-08-04 03:35:00
+TXN0023,CUST1194,8926,failed,authentication_failed,1,new,Credit Card,inactive,33,2026-08-28 14:33:00
+TXN0024,CUST1108,3669,failed,card_declined,2,premium,Credit Card,active,57,2026-08-24 13:19:00
+TXN0025,CUST1115,2181,success,none,0,new,Credit Card,active,37,2026-08-26 05:01:00
+TXN0026,CUST1058,9840,success,none,0,new,UPI,not_applicable,3,2026-08-11 10:03:00
+TXN0027,CUST1017,713,success,none,0,returning,UPI,inactive,42,2026-08-23 02:12:00
+TXN0028,CUST1054,9033,failed,bank_timeout,3,new,Wallet,inactive,12,2026-08-05 07:01:00
+TXN0029,CUST1024,10995,success,none,0,returning,Debit Card,inactive,55,2026-08-03 11:10:00
+TXN0030,CUST1172,10905,success,none,0,premium,UPI,inactive,21,2026-08-05 23:21:00
+TXN0031,CUST1063,3338,success,none,0,new,Wallet,inactive,11,2026-08-13 16:14:00
+TXN0032,CUST1118,4291,failed,authentication_failed,0,new,Net Banking,active,41,2026-08-25 14:27:00
+TXN0033,CUST1003,1727,success,none,0,new,Credit Card,inactive,13,2026-08-19 06:02:00
+TXN0034,CUST1015,2896,abandoned,checkout_abandoned,2,returning,UPI,inactive,18,2026-08-20 06:02:00
+TXN0035,CUST1178,12167,success,none,0,premium,Net Banking,active,13,2026-08-03 15:52:00
+TXN0036,CUST1148,12253,failed,insufficient_balance,0,premium,UPI,inactive,30,2026-08-23 21:14:00
+TXN0037,CUST1135,2778,success,none,0,new,Wallet,active,4,2026-08-28 01:56:00
+TXN0038,CUST1017,11261,success,none,0,new,Net Banking,not_applicable,15,2026-08-27 08:20:00
+TXN0039,CUST1152,850,success,none,0,premium,UPI,inactive,36,2026-08-24 19:01:00
+TXN0040,CUST1080,4471,success,none,0,new,Debit Card,inactive,8,2026-08-30 09:03:00
+TXN0041,CUST1076,7690,success,none,0,returning,UPI,not_applicable,36,2026-08-05 13:12:00
+TXN0042,CUST1018,9007,success,none,0,new,Wallet,inactive,56,2026-08-04 03:08:00
+TXN0043,CUST1062,6253,success,none,0,returning,Credit Card,not_applicable,45,2026-08-14 18:25:00
+TXN0044,CUST1156,13422,success,none,0,premium,Wallet,inactive,19,2026-08-05 17:08:00
+TXN0045,CUST1034,4532,failed,bank_timeout,2,new,UPI,inactive,38,2026-08-10 14:03:00
+TXN0046,CUST1183,5816,success,none,0,new,Debit Card,inactive,57,2026-08-03 07:29:00
+TXN0047,CUST1023,10591,success,none,0,returning,Debit Card,inactive,49,2026-08-06 22:53:00
+TXN0048,CUST1163,4490,failed,card_declined,0,new,Net Banking,active,4,2026-08-07 18:48:00
+TXN0049,CUST1139,789,failed,card_declined,1,returning,Wallet,active,19,2026-08-17 14:17:00
+TXN0050,CUST1010,14926,failed,insufficient_balance,2,returning,Credit Card,not_applicable,56,2026-08-19 11:52:00
+TXN0051,CUST1158,12478,abandoned,checkout_abandoned,1,new,Credit Card,inactive,1,2026-08-09 03:54:00
+TXN0052,CUST1188,5641,success,none,0,returning,Credit Card,not_applicable,6,2026-08-18 09:50:00
+TXN0053,CUST1009,14266,success,none,0,returning,Credit Card,inactive,22,2026-08-14 21:20:00
+TXN0054,CUST1058,3851,success,none,0,new,Credit Card,inactive,55,2026-08-04 03:49:00
+TXN0055,CUST1197,4772,success,none,0,returning,Wallet,not_applicable,21,2026-08-02 06:08:00
+TXN0056,CUST1029,14568,failed,network_error,0,returning,Credit Card,active,38,2026-08-20 18:39:00
+TXN0057,CUST1088,12135,failed,authentication_failed,0,returning,Net Banking,inactive,57,2026-08-27 05:47:00
+TXN0058,CUST1048,4372,success,none,0,new,Net Banking,not_applicable,43,2026-08-09 23:12:00
+TXN0059,CUST1093,7265,failed,insufficient_balance,2,new,Debit Card,not_applicable,19,2026-08-19 14:04:00
+TXN0060,CUST1083,6791,failed,bank_timeout,3,premium,Debit Card,inactive,60,2026-08-18 06:07:00
+TXN0061,CUST1173,12456,failed,card_declined,0,new,Wallet,inactive,18,2026-08-10 13:34:00
+TXN0062,CUST1110,13072,failed,card_declined,3,premium,Wallet,active,43,2026-08-10 17:25:00
+TXN0063,CUST1130,7951,failed,network_error,2,premium,Credit Card,active,52,2026-08-11 16:32:00
+TXN0064,CUST1172,5284,success,none,0,new,Credit Card,active,15,2026-08-22 14:58:00
+TXN0065,CUST1156,14121,success,none,0,new,Net Banking,not_applicable,36,2026-08-09 20:22:00
+TXN0066,CUST1183,11608,success,none,0,returning,Net Banking,active,41,2026-08-01 06:03:00
+TXN0067,CUST1192,14296,success,none,0,new,Net Banking,not_applicable,33,2026-08-22 03:24:00
+TXN0068,CUST1012,9331,success,none,0,new,UPI,inactive,42,2026-08-25 04:08:00
+TXN0069,CUST1143,9954,failed,authentication_failed,3,returning,Net Banking,not_applicable,28,2026-08-08 05:50:00
+TXN0070,CUST1190,14313,success,none,0,returning,Net Banking,active,53,2026-08-30 00:29:00
+TXN0071,CUST1070,12746,failed,network_error,3,premium,Net Banking,active,45,2026-08-14 00:05:00
+TXN0072,CUST1060,4650,abandoned,checkout_abandoned,0,returning,Debit Card,active,9,2026-08-11 12:35:00
+TXN0073,CUST1098,11568,success,none,0,new,Credit Card,inactive,21,2026-08-25 16:40:00
+TXN0074,CUST1119,7011,failed,card_declined,0,new,Credit Card,not_applicable,24,2026-08-22 16:59:00
+TXN0075,CUST1001,5962,abandoned,checkout_abandoned,3,returning,Net Banking,not_applicable,47,2026-08-25 20:31:00
+TXN0076,CUST1154,14908,success,none,0,new,Net Banking,inactive,31,2026-08-02 07:42:00
+TXN0077,CUST1099,5706,failed,card_declined,1,premium,Net Banking,inactive,34,2026-08-02 05:27:00
+TXN0078,CUST1100,9896,success,none,0,premium,UPI,active,8,2026-08-22 00:17:00
+TXN0079,CUST1046,1022,success,none,0,returning,Net Banking,inactive,20,2026-08-16 08:38:00
+TXN0080,CUST1194,14611,failed,card_declined,2,returning,Debit Card,active,30,2026-08-01 21:10:00
+TXN0081,CUST1191,9036,success,none,0,new,Debit Card,active,49,2026-08-30 15:53:00
+TXN0082,CUST1010,12556,success,none,0,new,Credit Card,active,39,2026-08-07 22:26:00
+TXN0083,CUST1061,2267,failed,bank_timeout,3,returning,UPI,not_applicable,16,2026-08-17 18:55:00
+TXN0084,CUST1042,10125,failed,bank_timeout,2,premium,UPI,active,37,2026-08-02 04:02:00
+TXN0085,CUST1079,9632,success,none,0,premium,Net Banking,inactive,12,2026-08-04 11:00:00
+TXN0086,CUST1151,11514,success,none,0,premium,Credit Card,active,54,2026-08-28 07:48:00
+TXN0087,CUST1030,13244,success,none,0,premium,UPI,active,42,2026-08-17 20:45:00
+TXN0088,CUST1017,8488,success,none,0,premium,Debit Card,active,52,2026-08-23 07:25:00
+TXN0089,CUST1027,7301,failed,card_declined,1,returning,Net Banking,not_applicable,33,2026-08-30 14:28:00
+TXN0090,CUST1069,10290,success,none,0,premium,Net Banking,inactive,37,2026-08-13 05:09:00
+TXN0091,CUST1082,14153,success,none,0,new,UPI,inactive,15,2026-08-22 03:35:00
+TXN0092,CUST1145,10198,success,none,0,premium,Net Banking,active,54,2026-08-15 19:00:00
+TXN0093,CUST1046,8187,failed,network_error,2,new,Debit Card,not_applicable,44,2026-08-13 13:45:00
+TXN0094,CUST1142,365,success,none,0,premium,Credit Card,inactive,26,2026-08-23 05:39:00
+TXN0095,CUST1142,12620,failed,card_declined,3,new,Net Banking,active,5,2026-08-14 09:23:00
+TXN0096,CUST1056,6824,success,none,0,premium,Credit Card,inactive,23,2026-08-22 12:55:00
+TXN0097,CUST1141,8897,abandoned,checkout_abandoned,2,returning,Net Banking,inactive,44,2026-08-21 15:36:00
+TXN0098,CUST1069,5222,success,none,0,returning,Credit Card,active,20,2026-08-06 10:35:00
+TXN0099,CUST1190,8978,success,none,0,premium,Credit Card,inactive,30,2026-08-13 14:00:00
+TXN0100,CUST1185,9858,success,none,0,premium,Wallet,active,53,2026-08-09 20:01:00
+TXN0101,CUST1075,3926,success,none,0,returning,Credit Card,not_applicable,34,2026-08-06 18:15:00
+TXN0102,CUST1070,944,success,none,0,new,Wallet,active,40,2026-08-23 08:10:00
+TXN0103,CUST1026,14497,success,none,0,new,Wallet,inactive,28,2026-08-16 12:08:00
+TXN0104,CUST1047,1040,success,none,0,returning,Net Banking,active,25,2026-08-23 09:07:00
+TXN0105,CUST1018,9652,success,none,0,premium,UPI,inactive,60,2026-08-14 19:52:00
+TXN0106,CUST1021,4265,failed,authentication_failed,1,new,Wallet,not_applicable,24,2026-08-21 12:04:00
+TXN0107,CUST1113,5070,success,none,0,premium,Net Banking,inactive,3,2026-08-28 17:52:00
+TXN0108,CUST1189,1824,success,none,0,new,Credit Card,active,10,2026-08-11 21:59:00
+TXN0109,CUST1044,9242,success,none,0,new,Credit Card,inactive,44,2026-08-28 00:36:00
+TXN0110,CUST1120,4970,success,none,0,new,Credit Card,inactive,44,2026-08-21 15:55:00
+TXN0111,CUST1018,11461,failed,authentication_failed,1,new,Debit Card,inactive,7,2026-08-25 18:48:00
+TXN0112,CUST1057,10809,failed,insufficient_balance,0,new,Debit Card,active,50,2026-08-14 23:59:00
+TXN0113,CUST1152,12469,success,none,0,premium,Debit Card,active,44,2026-08-14 20:08:00
+TXN0114,CUST1179,6793,success,none,0,returning,Wallet,inactive,5,2026-08-28 05:12:00
+TXN0115,CUST1010,14771,failed,insufficient_balance,0,returning,Debit Card,active,43,2026-08-27 04:16:00
+TXN0116,CUST1150,538,failed,bank_timeout,3,premium,Debit Card,inactive,41,2026-08-21 03:01:00
+TXN0117,CUST1071,3172,failed,card_declined,0,premium,Net Banking,active,22,2026-08-19 14:01:00
+TXN0118,CUST1085,5459,abandoned,checkout_abandoned,2,premium,UPI,active,44,2026-08-23 13:11:00
+TXN0119,CUST1073,11054,success,none,0,returning,Wallet,active,20,2026-08-12 11:41:00
+TXN0120,CUST1082,2098,failed,insufficient_balance,3,returning,Wallet,inactive,3,2026-08-09 12:53:00
+TXN0121,CUST1132,6126,failed,insufficient_balance,1,premium,Net Banking,active,35,2026-08-06 23:06:00
+TXN0122,CUST1073,7377,success,none,0,premium,Net Banking,inactive,38,2026-08-11 21:22:00
+TXN0123,CUST1181,2793,success,none,0,returning,Wallet,inactive,5,2026-08-11 05:25:00
+TXN0124,CUST1029,7759,success,none,0,new,Credit Card,not_applicable,18,2026-08-24 03:49:00
+TXN0125,CUST1180,4678,abandoned,checkout_abandoned,1,returning,Net Banking,inactive,35,2026-08-07 13:59:00
+TXN0126,CUST1098,3321,failed,bank_timeout,0,premium,Wallet,active,49,2026-08-19 21:13:00
+TXN0127,CUST1087,13104,failed,network_error,2,premium,Debit Card,inactive,37,2026-08-23 06:49:00
+TXN0128,CUST1038,7515,success,none,0,premium,Net Banking,inactive,48,2026-08-25 17:34:00
+TXN0129,CUST1096,7659,abandoned,checkout_abandoned,1,returning,Credit Card,not_applicable,24,2026-08-11 15:06:00
+TXN0130,CUST1198,6929,failed,card_declined,3,new,Debit Card,not_applicable,50,2026-08-30 16:10:00
+TXN0131,CUST1038,8314,success,none,0,new,Credit Card,not_applicable,21,2026-08-05 13:37:00
+TXN0132,CUST1112,1832,success,none,0,premium,Net Banking,active,26,2026-08-30 19:11:00
+TXN0133,CUST1039,1424,success,none,0,returning,Debit Card,not_applicable,25,2026-08-30 13:47:00
+TXN0134,CUST1020,14154,success,none,0,returning,Wallet,inactive,40,2026-08-23 04:58:00
+TXN0135,CUST1138,787,success,none,0,premium,UPI,inactive,58,2026-08-14 01:53:00
+TXN0136,CUST1058,12434,abandoned,checkout_abandoned,0,new,Net Banking,inactive,10,2026-08-14 15:05:00
+TXN0137,CUST1007,952,success,none,0,returning,UPI,inactive,27,2026-08-07 15:00:00
+TXN0138,CUST1062,8901,failed,bank_timeout,1,returning,Wallet,active,5,2026-08-28 17:43:00
+TXN0139,CUST1097,10352,success,none,0,premium,Credit Card,inactive,9,2026-08-11 13:36:00
+TXN0140,CUST1118,10650,success,none,0,returning,Net Banking,active,57,2026-08-22 04:10:00
+TXN0141,CUST1073,11300,success,none,0,premium,Credit Card,active,37,2026-08-14 14:45:00
+TXN0142,CUST1163,7150,success,none,0,premium,Debit Card,active,12,2026-08-18 12:11:00
+TXN0143,CUST1123,1946,failed,authentication_failed,2,new,Net Banking,not_applicable,18,2026-08-01 23:57:00
+TXN0144,CUST1168,6683,failed,insufficient_balance,3,returning,UPI,inactive,49,2026-08-11 11:21:00
+TXN0145,CUST1155,13337,failed,authentication_failed,2,returning,Credit Card,not_applicable,48,2026-08-31 00:00:00
+TXN0146,CUST1174,13934,abandoned,checkout_abandoned,0,new,UPI,inactive,50,2026-08-21 01:29:00
+TXN0147,CUST1008,9694,success,none,0,returning,Credit Card,inactive,20,2026-08-19 21:50:00
+TXN0148,CUST1044,3488,abandoned,checkout_abandoned,2,new,Wallet,not_applicable,32,2026-08-13 09:40:00
+TXN0149,CUST1042,4409,failed,network_error,0,returning,Debit Card,inactive,4,2026-08-07 09:44:00
+TXN0150,CUST1193,3895,abandoned,checkout_abandoned,2,premium,Net Banking,active,50,2026-08-18 22:58:00
+TXN0151,CUST1003,4531,success,none,0,premium,UPI,inactive,47,2026-08-12 22:21:00
+TXN0152,CUST1149,6441,success,none,0,premium,Debit Card,active,30,2026-08-02 03:20:00
+TXN0153,CUST1158,14686,abandoned,checkout_abandoned,1,premium,Debit Card,inactive,4,2026-08-29 22:01:00
+TXN0154,CUST1118,11685,success,none,0,returning,Net Banking,active,60,2026-08-02 16:38:00
+TXN0155,CUST1077,8270,success,none,0,new,UPI,not_applicable,8,2026-08-18 16:30:00
+TXN0156,CUST1116,6277,success,none,0,premium,Wallet,inactive,46,2026-08-08 00:46:00
+TXN0157,CUST1106,10929,failed,network_error,0,new,Net Banking,not_applicable,23,2026-08-10 21:18:00
+TXN0158,CUST1113,7484,success,none,0,new,Debit Card,not_applicable,23,2026-08-25 18:42:00
+TXN0159,CUST1165,6075,success,none,0,new,Net Banking,active,60,2026-08-21 16:40:00
+TXN0160,CUST1023,11057,abandoned,checkout_abandoned,0,new,Wallet,inactive,15,2026-08-06 17:32:00
+TXN0161,CUST1144,3561,success,none,0,new,Wallet,active,52,2026-08-11 14:29:00
+TXN0162,CUST1084,12886,success,none,0,new,Wallet,active,8,2026-08-25 14:03:00
+TXN0163,CUST1064,13281,failed,insufficient_balance,1,new,UPI,active,22,2026-08-11 19:53:00
+TXN0164,CUST1150,5503,success,none,0,new,Credit Card,active,47,2026-08-20 03:48:00
+TXN0165,CUST1134,2061,success,none,0,premium,UPI,active,32,2026-08-28 00:26:00
+TXN0166,CUST1027,7604,abandoned,checkout_abandoned,0,premium,Credit Card,inactive,50,2026-08-30 23:41:00
+TXN0167,CUST1133,5140,success,none,0,returning,UPI,inactive,54,2026-08-19 06:40:00
+TXN0168,CUST1109,11440,failed,card_declined,0,new,Net Banking,active,20,2026-08-28 16:25:00
+TXN0169,CUST1037,1275,failed,authentication_failed,2,new,Debit Card,inactive,38,2026-08-25 03:30:00
+TXN0170,CUST1075,7632,success,none,0,premium,Wallet,inactive,7,2026-08-30 19:07:00
+TXN0171,CUST1166,14579,success,none,0,premium,Credit Card,active,26,2026-08-16 10:12:00
+TXN0172,CUST1116,6731,success,none,0,returning,UPI,inactive,42,2026-08-12 14:24:00
+TXN0173,CUST1095,2699,success,none,0,premium,Net Banking,active,5,2026-08-20 15:43:00
+TXN0174,CUST1024,12398,failed,authentication_failed,0,premium,Debit Card,inactive,35,2026-08-26 13:30:00
+TXN0175,CUST1084,11176,success,none,0,new,Net Banking,not_applicable,60,2026-08-20 05:57:00
+TXN0176,CUST1184,1041,success,none,0,returning,Wallet,active,36,2026-08-24 02:13:00
+TXN0177,CUST1054,2734,success,none,0,premium,Net Banking,active,22,2026-08-26 07:35:00
+TXN0178,CUST1094,2081,success,none,0,returning,Wallet,inactive,54,2026-08-26 12:43:00
+TXN0179,CUST1196,13608,failed,authentication_failed,0,premium,Wallet,inactive,59,2026-08-30 22:31:00
+TXN0180,CUST1177,4580,success,none,0,new,Credit Card,inactive,58,2026-08-16 11:10:00
+TXN0181,CUST1089,299,failed,card_declined,0,new,Credit Card,active,47,2026-08-29 19:35:00
+TXN0182,CUST1007,1702,success,none,0,premium,Wallet,active,29,2026-08-16 12:20:00
+TXN0183,CUST1040,6261,failed,authentication_failed,0,returning,Debit Card,active,9,2026-08-08 03:56:00
+TXN0184,CUST1193,10321,success,none,0,new,UPI,not_applicable,27,2026-08-23 02:28:00
+TXN0185,CUST1155,7441,success,none,0,returning,Debit Card,not_applicable,7,2026-08-16 17:01:00
+TXN0186,CUST1110,2015,success,none,0,returning,Wallet,not_applicable,19,2026-08-03 01:36:00
+TXN0187,CUST1056,6674,success,none,0,premium,UPI,active,60,2026-08-10 14:43:00
+TXN0188,CUST1196,2447,success,none,0,returning,Debit Card,active,31,2026-08-20 14:23:00
+TXN0189,CUST1044,2315,failed,authentication_failed,2,returning,Wallet,active,25,2026-08-02 22:12:00
+TXN0190,CUST1111,506,abandoned,checkout_abandoned,3,returning,UPI,not_applicable,25,2026-08-30 03:12:00
+TXN0191,CUST1106,4942,success,none,0,new,Net Banking,inactive,10,2026-08-29 03:09:00
+TXN0192,CUST1117,13830,success,none,0,premium,Debit Card,active,15,2026-08-20 19:52:00
+TXN0193,CUST1150,6759,success,none,0,premium,UPI,active,47,2026-08-16 10:50:00
+TXN0194,CUST1056,5655,success,none,0,new,UPI,active,33,2026-08-24 05:00:00
+TXN0195,CUST1049,12916,failed,bank_timeout,1,returning,Debit Card,active,9,2026-08-12 15:35:00
+TXN0196,CUST1050,3041,failed,insufficient_balance,1,premium,Credit Card,inactive,31,2026-08-22 02:45:00
+TXN0197,CUST1193,9435,failed,authentication_failed,2,premium,Net Banking,inactive,20,2026-08-07 20:53:00
+TXN0198,CUST1112,1317,failed,network_error,0,returning,Net Banking,inactive,32,2026-08-04 09:02:00
+TXN0199,CUST1079,7764,success,none,0,returning,UPI,inactive,4,2026-08-30 08:08:00
+TXN0200,CUST1023,10275,success,none,0,premium,Wallet,inactive,35,2026-08-02 20:48:00
+TXN0201,CUST1115,13467,success,none,0,premium,Credit Card,active,32,2026-08-07 20:46:00
+TXN0202,CUST1015,7580,abandoned,checkout_abandoned,0,new,Debit Card,not_applicable,41,2026-08-08 20:28:00
+TXN0203,CUST1010,4258,abandoned,checkout_abandoned,1,premium,Net Banking,active,23,2026-08-13 20:59:00
+TXN0204,CUST1099,6896,success,none,0,returning,Wallet,not_applicable,41,2026-08-16 05:31:00
+TXN0205,CUST1016,5600,failed,network_error,2,new,Wallet,not_applicable,54,2026-08-30 21:08:00
+TXN0206,CUST1154,14506,success,none,0,new,Debit Card,not_applicable,9,2026-08-16 22:05:00
+TXN0207,CUST1079,10947,success,none,0,premium,Net Banking,inactive,60,2026-08-04 20:32:00
+TXN0208,CUST1079,9356,failed,authentication_failed,0,returning,Debit Card,not_applicable,42,2026-08-20 06:28:00
+TXN0209,CUST1130,6127,success,none,0,new,Debit Card,active,21,2026-08-23 03:08:00
+TXN0210,CUST1049,3910,success,none,0,new,Credit Card,active,32,2026-08-25 13:34:00
+TXN0211,CUST1189,14677,failed,authentication_failed,1,premium,UPI,inactive,24,2026-08-08 00:29:00
+TXN0212,CUST1041,3161,failed,bank_timeout,3,premium,Wallet,active,26,2026-08-17 13:54:00
+TXN0213,CUST1173,11988,failed,card_declined,1,new,Net Banking,not_applicable,15,2026-08-15 02:01:00
+TXN0214,CUST1120,13881,failed,authentication_failed,3,new,Debit Card,inactive,49,2026-08-13 19:46:00
+TXN0215,CUST1199,6455,success,none,0,premium,Wallet,active,52,2026-08-10 02:07:00
+TXN0216,CUST1154,2466,failed,network_error,0,returning,UPI,not_applicable,54,2026-08-24 11:30:00
+TXN0217,CUST1031,4869,success,none,0,new,Credit Card,not_applicable,9,2026-08-20 21:50:00
+TXN0218,CUST1023,3836,abandoned,checkout_abandoned,3,returning,Debit Card,active,25,2026-08-23 20:19:00
+TXN0219,CUST1095,4061,success,none,0,returning,UPI,active,20,2026-08-05 12:13:00
+TXN0220,CUST1182,10847,success,none,0,returning,Credit Card,inactive,58,2026-08-22 12:02:00
+TXN0221,CUST1178,13815,success,none,0,new,Net Banking,active,57,2026-08-04 14:32:00
+TXN0222,CUST1004,4392,success,none,0,new,Credit Card,not_applicable,38,2026-08-25 00:28:00
+TXN0223,CUST1108,2020,success,none,0,returning,Credit Card,active,15,2026-08-20 02:33:00
+TXN0224,CUST1163,13206,success,none,0,premium,Net Banking,active,38,2026-08-25 09:30:00
+TXN0225,CUST1004,10552,success,none,0,premium,Wallet,active,18,2026-08-20 12:50:00
+TXN0226,CUST1000,10272,failed,bank_timeout,0,returning,Credit Card,not_applicable,23,2026-08-04 01:55:00
+TXN0227,CUST1134,9113,failed,card_declined,3,premium,Wallet,active,40,2026-08-18 14:34:00
+TXN0228,CUST1095,4354,success,none,0,premium,UPI,active,22,2026-08-11 23:22:00
+TXN0229,CUST1187,10964,failed,network_error,1,premium,UPI,active,22,2026-08-25 20:23:00
+TXN0230,CUST1086,13527,failed,card_declined,3,premium,Credit Card,inactive,11,2026-08-07 03:17:00
+TXN0231,CUST1016,11930,success,none,0,returning,UPI,active,50,2026-08-10 01:52:00
+TXN0232,CUST1010,5369,success,none,0,returning,Wallet,not_applicable,30,2026-08-12 12:41:00
+TXN0233,CUST1009,12540,success,none,0,premium,Credit Card,active,55,2026-08-30 20:14:00
+TXN0234,CUST1084,4675,success,none,0,new,Debit Card,inactive,47,2026-08-21 00:18:00
+TXN0235,CUST1098,5753,failed,network_error,2,new,Net Banking,active,46,2026-08-20 07:40:00
+TXN0236,CUST1020,7254,success,none,0,premium,Credit Card,active,6,2026-08-04 15:27:00
+TXN0237,CUST1083,11027,success,none,0,returning,Debit Card,not_applicable,27,2026-08-08 14:01:00
+TXN0238,CUST1176,7471,success,none,0,returning,Net Banking,inactive,39,2026-08-20 19:04:00
+TXN0239,CUST1070,10676,failed,card_declined,2,new,UPI,not_applicable,51,2026-08-08 06:44:00
+TXN0240,CUST1007,2538,success,none,0,premium,Net Banking,active,15,2026-08-30 08:41:00
+TXN0241,CUST1093,6132,success,none,0,returning,Wallet,active,43,2026-08-21 11:26:00
+TXN0242,CUST1094,6294,failed,authentication_failed,2,returning,UPI,inactive,20,2026-08-30 13:29:00
+TXN0243,CUST1071,4288,failed,card_declined,3,new,UPI,not_applicable,7,2026-08-12 21:55:00
+TXN0244,CUST1198,4463,success,none,0,premium,Net Banking,inactive,18,2026-08-23 08:31:00
+TXN0245,CUST1051,2208,success,none,0,new,UPI,not_applicable,28,2026-08-04 23:53:00
+TXN0246,CUST1174,14052,failed,authentication_failed,2,returning,Debit Card,inactive,54,2026-08-08 04:02:00
+TXN0247,CUST1182,11824,failed,authentication_failed,1,premium,Credit Card,active,12,2026-08-07 07:41:00
+TXN0248,CUST1060,13148,success,none,0,returning,UPI,not_applicable,23,2026-08-22 06:31:00
+TXN0249,CUST1141,2325,success,none,0,premium,UPI,active,45,2026-08-22 18:49:00
+TXN0250,CUST1134,6929,success,none,0,returning,Wallet,inactive,41,2026-08-04 09:00:00
+TXN0251,CUST1115,7831,success,none,0,premium,Wallet,inactive,40,2026-08-27 18:01:00
+TXN0252,CUST1046,12778,success,none,0,new,Net Banking,active,53,2026-08-06 15:37:00
+TXN0253,CUST1132,2706,success,none,0,returning,Credit Card,not_applicable,14,2026-08-16 17:56:00
+TXN0254,CUST1132,14861,success,none,0,returning,UPI,not_applicable,35,2026-08-13 11:46:00
+TXN0255,CUST1032,10439,success,none,0,returning,Wallet,not_applicable,41,2026-08-08 16:11:00
+TXN0256,CUST1151,9712,failed,authentication_failed,2,new,Credit Card,not_applicable,2,2026-08-02 06:59:00
+TXN0257,CUST1020,943,success,none,0,premium,Wallet,active,49,2026-08-27 00:55:00
+TXN0258,CUST1106,10326,success,none,0,premium,UPI,inactive,34,2026-08-14 04:23:00
+TXN0259,CUST1164,5148,failed,card_declined,2,returning,Credit Card,inactive,4,2026-08-03 17:26:00
+TXN0260,CUST1040,7401,success,none,0,returning,Net Banking,inactive,38,2026-08-07 12:55:00
+TXN0261,CUST1080,14313,failed,network_error,3,premium,Debit Card,active,48,2026-08-17 20:43:00
+TXN0262,CUST1131,9401,success,none,0,new,Debit Card,active,17,2026-08-21 11:04:00
+TXN0263,CUST1063,2507,success,none,0,new,UPI,inactive,55,2026-08-29 00:09:00
+TXN0264,CUST1107,4266,abandoned,checkout_abandoned,2,new,Debit Card,active,48,2026-08-08 06:02:00
+TXN0265,CUST1127,8632,abandoned,checkout_abandoned,3,returning,Net Banking,active,5,2026-08-18 21:31:00
+TXN0266,CUST1129,7690,failed,insufficient_balance,0,new,Credit Card,inactive,31,2026-08-28 04:38:00
+TXN0267,CUST1167,11217,success,none,0,returning,Debit Card,active,27,2026-08-07 02:17:00
+TXN0268,CUST1067,12118,success,none,0,returning,Net Banking,inactive,3,2026-08-26 22:53:00
+TXN0269,CUST1143,3388,success,none,0,returning,Wallet,inactive,32,2026-08-21 11:54:00
+TXN0270,CUST1195,9207,failed,insufficient_balance,1,returning,Wallet,active,25,2026-08-17 23:37:00
+TXN0271,CUST1086,9338,success,none,0,returning,Credit Card,not_applicable,25,2026-08-23 18:13:00
+TXN0272,CUST1010,941,failed,card_declined,3,new,Credit Card,active,38,2026-08-24 11:04:00
+TXN0273,CUST1035,5572,success,none,0,premium,Debit Card,inactive,47,2026-08-14 14:50:00
+TXN0274,CUST1151,5710,success,none,0,premium,Wallet,inactive,36,2026-08-14 15:27:00
+TXN0275,CUST1121,13564,success,none,0,new,Debit Card,active,26,2026-08-27 13:33:00
+TXN0276,CUST1078,13253,failed,network_error,1,premium,UPI,inactive,3,2026-08-27 13:21:00
+TXN0277,CUST1122,2992,failed,card_declined,1,premium,Wallet,inactive,15,2026-08-02 10:29:00
+TXN0278,CUST1146,11676,success,none,0,new,Credit Card,inactive,26,2026-08-07 21:24:00
+TXN0279,CUST1105,11512,success,none,0,new,Net Banking,not_applicable,58,2026-08-22 11:07:00
+TXN0280,CUST1188,12116,success,none,0,new,Credit Card,not_applicable,20,2026-08-22 18:30:00
+TXN0281,CUST1134,6372,success,none,0,returning,Credit Card,not_applicable,21,2026-08-25 20:40:00
+TXN0282,CUST1090,11272,failed,bank_timeout,1,premium,Debit Card,active,35,2026-08-14 14:02:00
+TXN0283,CUST1057,5075,failed,card_declined,2,returning,Credit Card,inactive,22,2026-08-26 12:12:00
+TXN0284,CUST1184,4679,failed,authentication_failed,3,returning,UPI,inactive,52,2026-08-16 16:58:00
+TXN0285,CUST1197,13381,success,none,0,new,Debit Card,not_applicable,5,2026-08-16 18:19:00
+TXN0286,CUST1113,10946,success,none,0,returning,Net Banking,not_applicable,17,2026-08-26 13:52:00
+TXN0287,CUST1178,4649,failed,authentication_failed,1,new,UPI,active,3,2026-08-25 04:02:00
+TXN0288,CUST1057,10651,success,none,0,new,UPI,inactive,45,2026-08-22 11:59:00
+TXN0289,CUST1025,11359,abandoned,checkout_abandoned,1,new,UPI,inactive,41,2026-08-22 15:35:00
+TXN0290,CUST1122,10857,success,none,0,new,Debit Card,not_applicable,3,2026-08-05 01:42:00
+TXN0291,CUST1166,9605,failed,insufficient_balance,1,new,Wallet,inactive,56,2026-08-09 00:00:00
+TXN0292,CUST1009,13899,success,none,0,returning,Net Banking,not_applicable,55,2026-08-14 04:10:00
+TXN0293,CUST1009,350,failed,network_error,2,returning,Wallet,inactive,41,2026-08-25 17:25:00
+TXN0294,CUST1134,8291,success,none,0,new,Wallet,active,51,2026-08-06 03:02:00
+TXN0295,CUST1084,2861,failed,bank_timeout,0,premium,Net Banking,inactive,21,2026-08-14 10:14:00
+TXN0296,CUST1145,11248,failed,card_declined,3,new,Credit Card,not_applicable,20,2026-08-04 22:44:00
+TXN0297,CUST1102,11164,abandoned,checkout_abandoned,3,new,Credit Card,inactive,59,2026-08-12 06:56:00
+TXN0298,CUST1001,4471,success,none,0,returning,Credit Card,inactive,21,2026-08-14 17:48:00
+TXN0299,CUST1149,12042,success,none,0,premium,UPI,active,44,2026-08-11 18:06:00
+TXN0300,CUST1015,11140,success,none,0,new,Net Banking,inactive,43,2026-08-23 20:53:00
+TXN0301,CUST1180,12812,failed,network_error,2,returning,UPI,not_applicable,14,2026-08-10 23:20:00
+TXN0302,CUST1034,8033,failed,authentication_failed,2,new,Net Banking,inactive,44,2026-08-25 23:54:00
+TXN0303,CUST1120,12607,failed,authentication_failed,0,premium,Credit Card,inactive,28,2026-08-25 00:54:00
+TXN0304,CUST1180,6126,success,none,0,new,Wallet,not_applicable,57,2026-08-24 00:07:00
+TXN0305,CUST1051,9582,success,none,0,premium,Credit Card,inactive,28,2026-08-06 06:57:00
+TXN0306,CUST1174,3564,success,none,0,premium,Wallet,inactive,28,2026-08-03 12:46:00
+TXN0307,CUST1116,2360,success,none,0,premium,Net Banking,active,35,2026-08-22 01:02:00
+TXN0308,CUST1172,13419,success,none,0,returning,UPI,active,47,2026-08-10 22:00:00
+TXN0309,CUST1148,1395,success,none,0,new,Net Banking,active,34,2026-08-03 17:48:00
+TXN0310,CUST1017,7933,success,none,0,new,Debit Card,active,49,2026-08-30 04:42:00
+TXN0311,CUST1186,10781,abandoned,checkout_abandoned,3,returning,Debit Card,inactive,55,2026-08-18 04:19:00
+TXN0312,CUST1096,1513,success,none,0,premium,Wallet,active,7,2026-08-09 02:56:00
+TXN0313,CUST1137,6638,failed,bank_timeout,0,premium,Credit Card,active,19,2026-08-22 01:43:00
+TXN0314,CUST1172,11980,success,none,0,premium,Net Banking,active,15,2026-08-21 23:07:00
+TXN0315,CUST1088,2740,abandoned,checkout_abandoned,0,returning,Credit Card,active,51,2026-08-20 01:55:00
+TXN0316,CUST1157,12750,success,none,0,new,Credit Card,active,38,2026-08-02 12:40:00
+TXN0317,CUST1114,9993,success,none,0,premium,UPI,active,25,2026-08-20 23:27:00
+TXN0318,CUST1059,9042,success,none,0,new,UPI,inactive,14,2026-08-27 05:15:00
+TXN0319,CUST1081,9660,success,none,0,premium,Debit Card,active,42,2026-08-24 17:20:00
+TXN0320,CUST1056,6974,success,none,0,returning,Debit Card,not_applicable,56,2026-08-08 23:17:00
+TXN0321,CUST1160,11319,success,none,0,returning,Wallet,inactive,60,2026-08-30 06:40:00
+TXN0322,CUST1171,6443,failed,card_declined,1,premium,Debit Card,active,24,2026-08-09 08:50:00
+TXN0323,CUST1193,9012,failed,network_error,1,returning,Credit Card,inactive,58,2026-08-03 14:56:00
+TXN0324,CUST1143,6960,success,none,0,returning,Wallet,inactive,15,2026-08-12 14:31:00
+TXN0325,CUST1052,5610,abandoned,checkout_abandoned,2,premium,UPI,active,34,2026-08-09 16:03:00
+TXN0326,CUST1013,4597,failed,insufficient_balance,1,returning,Wallet,not_applicable,46,2026-08-26 10:24:00
+TXN0327,CUST1055,8053,success,none,0,new,Debit Card,active,13,2026-08-09 15:33:00
+TXN0328,CUST1189,2121,abandoned,checkout_abandoned,1,premium,Net Banking,active,58,2026-08-11 21:24:00
+TXN0329,CUST1141,5468,success,none,0,returning,Net Banking,not_applicable,22,2026-08-15 00:52:00
+TXN0330,CUST1066,6091,success,none,0,premium,Net Banking,inactive,30,2026-08-15 13:46:00
+TXN0331,CUST1052,6272,success,none,0,returning,Net Banking,active,47,2026-08-07 15:23:00
+TXN0332,CUST1004,4471,failed,card_declined,2,premium,Wallet,active,12,2026-08-16 00:18:00
+TXN0333,CUST1058,6422,success,none,0,premium,Credit Card,inactive,60,2026-08-16 08:42:00
+TXN0334,CUST1065,12705,success,none,0,returning,Net Banking,not_applicable,50,2026-08-17 00:40:00
+TXN0335,CUST1043,2492,success,none,0,premium,Wallet,inactive,41,2026-08-03 16:09:00
+TXN0336,CUST1134,753,failed,card_declined,1,new,UPI,not_applicable,14,2026-08-04 02:14:00
+TXN0337,CUST1181,2673,success,none,0,new,Credit Card,inactive,3,2026-08-29 02:50:00
+TXN0338,CUST1163,11123,failed,insufficient_balance,0,premium,Net Banking,inactive,35,2026-08-19 17:17:00
+TXN0339,CUST1003,473,success,none,0,premium,Debit Card,active,1,2026-08-23 20:33:00
+TXN0340,CUST1178,11242,success,none,0,returning,Credit Card,active,33,2026-08-07 18:38:00
+TXN0341,CUST1061,3343,success,none,0,premium,Wallet,active,17,2026-08-19 01:31:00
+TXN0342,CUST1020,6311,failed,bank_timeout,2,returning,Net Banking,not_applicable,52,2026-08-04 16:03:00
+TXN0343,CUST1167,14260,success,none,0,premium,UPI,active,24,2026-08-26 03:41:00
+TXN0344,CUST1121,1118,failed,insufficient_balance,3,premium,UPI,active,41,2026-08-16 01:50:00
+TXN0345,CUST1144,14255,abandoned,checkout_abandoned,1,new,Wallet,active,57,2026-08-26 19:04:00
+TXN0346,CUST1121,4640,failed,network_error,0,new,UPI,active,59,2026-08-15 07:30:00
+TXN0347,CUST1004,3593,failed,card_declined,0,premium,Credit Card,active,10,2026-08-26 15:59:00
+TXN0348,CUST1061,9483,success,none,0,returning,Wallet,not_applicable,8,2026-08-04 13:39:00
+TXN0349,CUST1128,12412,success,none,0,returning,UPI,active,53,2026-08-04 11:01:00
+TXN0350,CUST1087,10114,success,none,0,premium,Wallet,active,1,2026-08-29 20:37:00
+TXN0351,CUST1069,13036,success,none,0,returning,Net Banking,not_applicable,60,2026-08-18 02:03:00
+TXN0352,CUST1110,3242,failed,insufficient_balance,2,premium,Wallet,active,45,2026-08-04 08:17:00
+TXN0353,CUST1021,4589,failed,bank_timeout,3,new,Net Banking,inactive,23,2026-08-05 20:22:00
+TXN0354,CUST1023,284,success,none,0,returning,Net Banking,inactive,6,2026-08-07 00:43:00
+TXN0355,CUST1022,3269,failed,authentication_failed,3,returning,Net Banking,active,1,2026-08-05 01:53:00
+TXN0356,CUST1090,9279,failed,network_error,3,new,Wallet,active,18,2026-08-19 19:59:00
+TXN0357,CUST1099,12964,abandoned,checkout_abandoned,1,new,Wallet,not_applicable,33,2026-08-08 17:13:00
+TXN0358,CUST1175,6436,success,none,0,new,Credit Card,inactive,31,2026-08-07 15:23:00
+TXN0359,CUST1016,2938,success,none,0,returning,Debit Card,inactive,50,2026-08-04 12:01:00
+TXN0360,CUST1092,4322,failed,bank_timeout,3,new,Net Banking,active,8,2026-08-14 20:46:00
+TXN0361,CUST1001,6682,success,none,0,returning,Wallet,inactive,28,2026-08-16 05:37:00
+TXN0362,CUST1110,13559,success,none,0,premium,Wallet,active,38,2026-08-10 03:23:00
+TXN0363,CUST1122,5346,abandoned,checkout_abandoned,2,new,Net Banking,not_applicable,44,2026-08-29 19:17:00
+TXN0364,CUST1125,9634,success,none,0,new,Debit Card,inactive,23,2026-08-06 04:23:00
+TXN0365,CUST1144,3472,success,none,0,premium,Wallet,inactive,1,2026-08-22 00:12:00
+TXN0366,CUST1181,3633,failed,insufficient_balance,3,returning,Debit Card,not_applicable,31,2026-08-07 08:01:00
+TXN0367,CUST1162,5160,failed,card_declined,3,new,Debit Card,active,28,2026-08-28 05:06:00
+TXN0368,CUST1122,9738,success,none,0,returning,Wallet,not_applicable,26,2026-08-25 17:48:00
+TXN0369,CUST1009,13154,failed,insufficient_balance,0,returning,Wallet,active,42,2026-08-17 03:45:00
+TXN0370,CUST1042,10799,failed,card_declined,2,premium,UPI,active,6,2026-08-01 11:31:00
+TXN0371,CUST1025,4438,failed,authentication_failed,1,new,Wallet,inactive,23,2026-08-18 19:13:00
+TXN0372,CUST1118,12853,failed,bank_timeout,2,premium,Wallet,active,30,2026-08-05 18:11:00
+TXN0373,CUST1075,7014,failed,bank_timeout,2,new,UPI,inactive,21,2026-08-21 17:20:00
+TXN0374,CUST1052,8736,success,none,0,returning,Debit Card,inactive,46,2026-08-21 14:11:00
+TXN0375,CUST1081,1299,failed,insufficient_balance,0,returning,UPI,inactive,41,2026-08-05 23:27:00
+TXN0376,CUST1173,13307,success,none,0,new,Credit Card,not_applicable,10,2026-08-16 01:31:00
+TXN0377,CUST1143,7184,failed,bank_timeout,1,returning,Credit Card,not_applicable,42,2026-08-20 16:00:00
+TXN0378,CUST1101,677,abandoned,checkout_abandoned,3,premium,Wallet,inactive,27,2026-08-18 16:42:00
+TXN0379,CUST1001,11745,success,none,0,new,Credit Card,not_applicable,51,2026-08-03 20:20:00
+TXN0380,CUST1147,1866,success,none,0,premium,Credit Card,active,29,2026-08-06 04:28:00
+TXN0381,CUST1067,11187,abandoned,checkout_abandoned,2,returning,Wallet,not_applicable,24,2026-08-28 19:42:00
+TXN0382,CUST1100,9816,success,none,0,new,Debit Card,inactive,39,2026-08-08 20:26:00
+TXN0383,CUST1172,11765,failed,bank_timeout,2,returning,Wallet,active,15,2026-08-14 21:33:00
+TXN0384,CUST1029,3198,success,none,0,returning,Credit Card,inactive,38,2026-08-07 06:35:00
+TXN0385,CUST1147,6485,success,none,0,returning,Credit Card,not_applicable,44,2026-08-30 08:47:00
+TXN0386,CUST1044,9290,success,none,0,new,Net Banking,active,20,2026-08-21 12:36:00
+TXN0387,CUST1158,1077,success,none,0,returning,UPI,active,52,2026-08-18 11:22:00
+TXN0388,CUST1143,8480,success,none,0,premium,Net Banking,active,26,2026-08-21 04:48:00
+TXN0389,CUST1125,2939,success,none,0,new,Wallet,active,18,2026-08-02 11:42:00
+TXN0390,CUST1070,3882,success,none,0,premium,Debit Card,active,36,2026-08-23 13:00:00
+TXN0391,CUST1140,8568,success,none,0,new,Wallet,not_applicable,52,2026-08-17 16:42:00
+TXN0392,CUST1138,13676,success,none,0,new,Net Banking,inactive,6,2026-08-30 17:59:00
+TXN0393,CUST1192,4254,success,none,0,returning,UPI,inactive,55,2026-08-04 23:00:00
+TXN0394,CUST1112,14375,success,none,0,new,Credit Card,not_applicable,37,2026-08-16 22:58:00
+TXN0395,CUST1181,10197,success,none,0,premium,Net Banking,active,50,2026-08-10 09:41:00
+TXN0396,CUST1052,13395,success,none,0,new,Wallet,inactive,38,2026-08-25 12:28:00
+TXN0397,CUST1043,5501,success,none,0,premium,Debit Card,active,60,2026-08-24 09:52:00
+TXN0398,CUST1173,13554,abandoned,checkout_abandoned,3,new,Credit Card,active,17,2026-08-30 20:24:00
+TXN0399,CUST1032,11691,success,none,0,new,Credit Card,inactive,53,2026-08-12 06:23:00
+TXN0400,CUST1194,14019,success,none,0,premium,Net Banking,inactive,40,2026-08-13 05:30:00
+TXN0401,CUST1160,6985,success,none,0,returning,Net Banking,active,25,2026-08-24 11:11:00
+TXN0402,CUST1191,4757,success,none,0,premium,Debit Card,active,20,2026-08-27 11:39:00
+TXN0403,CUST1000,14435,failed,card_declined,2,premium,UPI,active,50,2026-08-25 07:44:00
+TXN0404,CUST1101,3767,success,none,0,returning,Credit Card,inactive,53,2026-08-13 21:45:00
+TXN0405,CUST1086,9166,failed,card_declined,2,premium,Credit Card,inactive,48,2026-08-03 04:52:00
+TXN0406,CUST1011,1830,success,none,0,premium,Net Banking,active,28,2026-08-21 18:38:00
+TXN0407,CUST1000,7208,abandoned,checkout_abandoned,2,new,Credit Card,active,55,2026-08-13 11:18:00
+TXN0408,CUST1023,10923,success,none,0,returning,Debit Card,not_applicable,57,2026-08-30 12:47:00
+TXN0409,CUST1042,1047,failed,bank_timeout,3,returning,Debit Card,not_applicable,5,2026-08-05 07:57:00
+TXN0410,CUST1000,3695,success,none,0,returning,UPI,active,33,2026-08-21 06:07:00
+TXN0411,CUST1002,331,failed,card_declined,1,premium,Debit Card,active,4,2026-08-11 10:04:00
+TXN0412,CUST1098,1662,success,none,0,premium,UPI,active,56,2026-08-14 14:51:00
+TXN0413,CUST1035,6469,success,none,0,new,Credit Card,not_applicable,0,2026-08-28 18:37:00
+TXN0414,CUST1166,2887,failed,bank_timeout,3,returning,Debit Card,not_applicable,43,2026-08-21 03:12:00
+TXN0415,CUST1055,1619,failed,authentication_failed,3,new,Credit Card,inactive,27,2026-08-15 07:31:00
+TXN0416,CUST1035,4258,success,none,0,returning,UPI,not_applicable,38,2026-08-28 15:39:00
+TXN0417,CUST1072,12961,failed,network_error,1,premium,UPI,inactive,38,2026-08-24 04:32:00
+TXN0418,CUST1048,12451,failed,bank_timeout,3,returning,Debit Card,inactive,7,2026-08-11 23:19:00
+TXN0419,CUST1127,10653,success,none,0,premium,UPI,active,23,2026-08-15 09:40:00
+TXN0420,CUST1033,6536,success,none,0,premium,Net Banking,inactive,11,2026-08-22 10:28:00
+TXN0421,CUST1197,1394,success,none,0,new,Wallet,inactive,13,2026-08-02 19:30:00
+TXN0422,CUST1015,13130,success,none,0,returning,Wallet,not_applicable,32,2026-08-19 21:45:00
+TXN0423,CUST1108,11697,failed,authentication_failed,1,returning,UPI,inactive,5,2026-08-15 02:30:00
+TXN0424,CUST1020,8576,success,none,0,new,Credit Card,inactive,37,2026-08-29 20:49:00
+TXN0425,CUST1195,13871,success,none,0,premium,UPI,active,46,2026-08-11 20:39:00
+TXN0426,CUST1014,4204,success,none,0,new,Net Banking,not_applicable,38,2026-08-03 12:06:00
+TXN0427,CUST1079,11112,success,none,0,premium,Credit Card,inactive,8,2026-08-01 12:23:00
+TXN0428,CUST1041,8332,success,none,0,returning,Wallet,not_applicable,16,2026-08-08 14:22:00
+TXN0429,CUST1095,2278,failed,insufficient_balance,0,premium,Debit Card,active,51,2026-08-20 12:56:00
+TXN0430,CUST1069,8781,failed,authentication_failed,0,new,Debit Card,inactive,29,2026-08-24 05:54:00
+TXN0431,CUST1092,1107,success,none,0,returning,Wallet,active,16,2026-08-05 16:23:00
+TXN0432,CUST1146,11243,success,none,0,premium,UPI,inactive,0,2026-08-03 00:06:00
+TXN0433,CUST1003,4205,success,none,0,new,Net Banking,active,11,2026-08-02 14:37:00
+TXN0434,CUST1141,13357,success,none,0,premium,Net Banking,active,26,2026-08-15 13:27:00
+TXN0435,CUST1069,13732,success,none,0,new,Wallet,not_applicable,43,2026-08-03 09:31:00
+TXN0436,CUST1045,3855,abandoned,checkout_abandoned,0,premium,UPI,active,55,2026-08-13 20:21:00
+TXN0437,CUST1198,14040,success,none,0,returning,Debit Card,inactive,0,2026-08-17 18:57:00
+TXN0438,CUST1051,4976,failed,bank_timeout,3,premium,Debit Card,active,37,2026-08-23 10:52:00
+TXN0439,CUST1197,12911,failed,bank_timeout,1,new,Wallet,active,59,2026-08-19 15:52:00
+TXN0440,CUST1006,4016,failed,insufficient_balance,2,premium,Debit Card,active,48,2026-08-30 21:57:00
+TXN0441,CUST1096,14109,success,none,0,premium,Debit Card,inactive,15,2026-08-20 02:33:00
+TXN0442,CUST1125,1180,success,none,0,new,Debit Card,active,57,2026-08-24 15:42:00
+TXN0443,CUST1105,11681,abandoned,checkout_abandoned,0,returning,Net Banking,not_applicable,6,2026-08-24 00:03:00
+TXN0444,CUST1034,10639,failed,insufficient_balance,3,returning,UPI,not_applicable,8,2026-08-11 18:37:00
+TXN0445,CUST1074,4475,failed,network_error,2,returning,Net Banking,inactive,17,2026-08-11 15:09:00
+TXN0446,CUST1019,3520,success,none,0,new,Wallet,active,10,2026-08-21 11:02:00
+TXN0447,CUST1119,5344,success,none,0,returning,UPI,active,28,2026-08-15 00:45:00
+TXN0448,CUST1118,4540,success,none,0,new,UPI,not_applicable,19,2026-08-28 10:58:00
+TXN0449,CUST1010,3721,success,none,0,returning,Credit Card,active,22,2026-08-19 00:48:00
+TXN0450,CUST1131,1001,success,none,0,premium,Debit Card,active,1,2026-08-19 09:42:00
+TXN0451,CUST1115,9307,success,none,0,premium,Wallet,active,6,2026-08-07 08:41:00
+TXN0452,CUST1031,394,success,none,0,new,Credit Card,inactive,23,2026-08-29 16:27:00
+TXN0453,CUST1165,1575,success,none,0,premium,Wallet,active,1,2026-08-03 22:25:00
+TXN0454,CUST1050,14985,failed,insufficient_balance,2,premium,Net Banking,active,2,2026-08-21 23:31:00
+TXN0455,CUST1012,2951,failed,card_declined,3,premium,Net Banking,active,24,2026-08-20 10:01:00
+TXN0456,CUST1044,5998,success,none,0,new,Credit Card,inactive,56,2026-08-07 18:20:00
+TXN0457,CUST1008,10260,success,none,0,premium,Wallet,active,31,2026-08-19 18:00:00
+TXN0458,CUST1140,8047,success,none,0,new,UPI,active,26,2026-08-10 01:51:00
+TXN0459,CUST1164,14693,failed,authentication_failed,0,premium,Credit Card,active,50,2026-08-17 08:14:00
+TXN0460,CUST1122,9120,abandoned,checkout_abandoned,2,returning,Debit Card,inactive,17,2026-08-09 04:24:00
+TXN0461,CUST1006,5423,success,none,0,premium,Credit Card,active,3,2026-08-22 11:12:00
+TXN0462,CUST1135,6055,abandoned,checkout_abandoned,0,premium,Credit Card,active,42,2026-08-11 23:24:00
+TXN0463,CUST1068,8942,failed,bank_timeout,3,premium,UPI,active,59,2026-08-08 21:44:00
+TXN0464,CUST1045,4074,failed,network_error,0,premium,Debit Card,inactive,44,2026-08-17 00:07:00
+TXN0465,CUST1145,9433,abandoned,checkout_abandoned,3,new,Wallet,not_applicable,19,2026-08-08 23:45:00
+TXN0466,CUST1125,820,success,none,0,new,UPI,active,1,2026-08-24 23:01:00
+TXN0467,CUST1122,210,success,none,0,returning,Wallet,active,21,2026-08-09 01:50:00
+TXN0468,CUST1082,1174,failed,bank_timeout,0,new,Credit Card,not_applicable,55,2026-08-17 14:33:00
+TXN0469,CUST1018,6319,failed,network_error,2,premium,Net Banking,active,8,2026-08-08 04:02:00
+TXN0470,CUST1187,7356,failed,bank_timeout,2,premium,Net Banking,active,42,2026-08-27 19:17:00
+TXN0471,CUST1044,6398,success,none,0,returning,Debit Card,not_applicable,0,2026-08-27 01:41:00
+TXN0472,CUST1100,14137,success,none,0,premium,UPI,active,58,2026-08-28 19:47:00
+TXN0473,CUST1056,10678,abandoned,checkout_abandoned,1,premium,UPI,active,47,2026-08-04 12:59:00
+TXN0474,CUST1060,5881,failed,insufficient_balance,2,returning,Credit Card,inactive,0,2026-08-13 01:40:00
+TXN0475,CUST1053,4287,success,none,0,premium,UPI,active,46,2026-08-01 01:23:00
+TXN0476,CUST1012,6522,abandoned,checkout_abandoned,3,returning,Net Banking,inactive,56,2026-08-18 05:39:00
+TXN0477,CUST1089,9145,failed,authentication_failed,1,returning,UPI,active,28,2026-08-04 08:30:00
+TXN0478,CUST1008,5030,success,none,0,new,Debit Card,active,4,2026-08-16 13:20:00
+TXN0479,CUST1043,14746,failed,authentication_failed,0,returning,Credit Card,inactive,38,2026-08-28 22:15:00
+TXN0480,CUST1123,11741,abandoned,checkout_abandoned,1,new,Net Banking,not_applicable,56,2026-08-20 18:15:00
+TXN0481,CUST1040,1076,success,none,0,new,Debit Card,active,26,2026-08-26 05:14:00
+TXN0482,CUST1184,12158,failed,network_error,1,premium,Debit Card,active,3,2026-08-18 21:09:00
+TXN0483,CUST1146,9204,success,none,0,returning,Credit Card,active,27,2026-08-04 23:42:00
+TXN0484,CUST1075,13697,success,none,0,premium,Wallet,active,1,2026-08-10 10:02:00
+TXN0485,CUST1043,10655,success,none,0,returning,UPI,active,19,2026-08-19 02:08:00
+TXN0486,CUST1120,8212,success,none,0,premium,Debit Card,inactive,24,2026-08-09 09:56:00
+TXN0487,CUST1094,14706,success,none,0,returning,Debit Card,active,16,2026-08-21 00:18:00
+TXN0488,CUST1119,4514,failed,bank_timeout,0,new,Debit Card,active,42,2026-08-16 15:30:00
+TXN0489,CUST1138,6981,failed,card_declined,3,premium,Credit Card,inactive,43,2026-08-22 14:38:00
+TXN0490,CUST1146,14644,success,none,0,new,Net Banking,inactive,57,2026-08-02 13:55:00
+TXN0491,CUST1128,9557,failed,authentication_failed,1,premium,Wallet,active,60,2026-08-21 10:28:00
+TXN0492,CUST1044,2937,success,none,0,new,Credit Card,inactive,5,2026-08-20 19:33:00
+TXN0493,CUST1051,13675,failed,network_error,2,premium,Credit Card,inactive,58,2026-08-04 01:11:00
+TXN0494,CUST1022,6557,failed,network_error,3,premium,Net Banking,active,50,2026-08-29 08:32:00
+TXN0495,CUST1150,8760,success,none,0,returning,UPI,active,36,2026-08-27 18:10:00
+TXN0496,CUST1149,12624,failed,insufficient_balance,2,new,UPI,not_applicable,56,2026-08-16 15:35:00
+TXN0497,CUST1105,4526,failed,card_declined,0,returning,Net Banking,active,17,2026-08-19 08:09:00
+TXN0498,CUST1036,10328,success,none,0,premium,Net Banking,active,44,2026-08-11 19:29:00
+TXN0499,CUST1012,12417,abandoned,checkout_abandoned,0,returning,Debit Card,inactive,52,2026-08-14 19:01:00
+TXN0500,CUST1079,4792,abandoned,checkout_abandoned,1,returning,UPI,active,19,2026-08-21 03:59:00
