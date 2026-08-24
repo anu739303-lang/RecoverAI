@@ -4,6 +4,9 @@ from app.dashboard import router as dashboard_router
 from app.recovery import router as recovery_router
 from fastapi.middleware.cors import CORSMiddleware
 from app.analytics import router as analytics_router
+from app.reasoning import router as reasoning_router
+from app.safety import router as safety_router
+from app.manual_review import router as manual_review_router
 
 app = FastAPI(
     title="RecoverAI",
@@ -30,6 +33,16 @@ app.include_router(
 app.include_router(
     analytics_router
 )
+
+app.include_router(
+    reasoning_router
+)
+
+app.include_router(
+    safety_router
+)
+
+app.include_router(manual_review_router)
 
 
 
