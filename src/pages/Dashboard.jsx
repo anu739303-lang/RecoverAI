@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
 import {
   PieChart,
   Pie,
@@ -8,6 +9,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+
 import "./Dashboard.css";
 
 function Dashboard() {
@@ -31,15 +33,16 @@ function Dashboard() {
   const [manualReview, setManualReview] = useState([]);
   const [manualReviewLoading, setManualReviewLoading] = useState(false);
 
-  // Review Action
-  const [reviewActionLoading, setReviewActionLoading] = useState(null);
-
   // Review History
   const [reviewHistory, setReviewHistory] = useState([]);
   const [reviewHistoryLoading, setReviewHistoryLoading] =
     useState(false);
 
-  // Main loading/error
+  // Review Action
+  const [reviewActionLoading, setReviewActionLoading] =
+    useState(null);
+
+  // Loading / Error
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -47,10 +50,37 @@ function Dashboard() {
   // API BASE URL
   // ==========================================
 
-  const API_BASE_URL = "http://127.0.0.1:8000/api";
+  const API_BASE_URL =
+    "http://127.0.0.1:8000/api";
 
   // ==========================================
-  // FETCH ALL DASHBOARD DATA
+  // CHART COLORS
+  // ==========================================
+
+  const OUTCOME_COLORS = [
+    "#22c55e", // Green
+    "#ef4444", // Red
+    "#f59e0b", // Orange
+  ];
+
+  const ACTION_COLORS = [
+    "#3b82f6",
+    "#8b5cf6",
+    "#14b8a6",
+    "#f97316",
+    "#ec4899",
+    "#06b6d4",
+  ];
+
+  const REVIEW_COLORS = [
+    "#22c55e", // Approved
+    "#8b5cf6", // Escalated
+    "#f59e0b", // Pending
+    "#ef4444", // Rejected
+  ];
+
+  // ==========================================
+  // FETCH DASHBOARD DATA
   // ==========================================
 
   useEffect(() => {
@@ -109,11 +139,9 @@ function Dashboard() {
     try {
       setReasoningLoading(true);
 
-      // Clear previous data
       setSafetyResult(null);
       setReviewHistory([]);
 
-      // Get AI reasoning
       const response = await axios.get(
         `${API_BASE_URL}/reasoning/${transactionId}`
       );
@@ -122,8 +150,9 @@ function Dashboard() {
         response.data
       );
 
-      // Get Review History
-      await fetchReviewHistory(transactionId);
+      await fetchReviewHistory(
+        transactionId
+      );
     } catch (err) {
       console.error(
         "Reasoning error:",
@@ -135,6 +164,78 @@ function Dashboard() {
       );
     } finally {
       setReasoningLoading(false);
+    }
+  };
+
+  // ==========================================
+  // CLOSE AI DECISION
+  // ==========================================
+
+  const closeDecision = () => {
+    setSelectedTransaction(null);
+    setSafetyResult(null);
+    setReviewHistory([]);
+  };
+
+  // ==========================================
+  // CHECK SAFETY
+  // ==========================================
+
+  const checkSafety = async (transactionId) => {
+    try {
+      setSafetyLoading(true);
+
+      const response = await axios.get(
+        `${API_BASE_URL}/safety/${transactionId}`
+      );
+
+      setSafetyResult(
+        response.data
+      );
+    } catch (err) {
+      console.error(
+        "Safety check error:",
+        err
+      );
+
+      alert(
+        "Unable to load safety decision."
+      );
+    } finally {
+      setSafetyLoading(false);
+    }
+  };
+
+  // ==========================================
+  // FETCH MANUAL REVIEW QUEUE
+  // ==========================================
+
+  const fetchManualReview = async () => {
+    try {
+      setManualReviewLoading(true);
+
+      const response = await axios.get(
+        `${API_BASE_URL}/manual-review`
+      );
+
+      const records =
+        response.data?.records || [];
+
+      setManualReview(records);
+    } catch (err) {
+      console.error(
+        "Manual Review Refresh Error:",
+        err
+      );
+
+      const message =
+        err.response?.data?.detail ||
+        err.response?.data?.message ||
+        "Unable to refresh manual review queue.";
+
+      alert(message);
+    } finally {
+      setManualReviewLoading(false);
     }
   };
 
@@ -164,85 +265,6 @@ function Dashboard() {
       setReviewHistory([]);
     } finally {
       setReviewHistoryLoading(false);
-    }
-  };
-
-  // ==========================================
-  // CLOSE AI DECISION
-  // ==========================================
-
-  const closeDecision = () => {
-    setSelectedTransaction(null);
-    setSafetyResult(null);
-    setReviewHistory([]);
-  };
-
-  // ==========================================
-  // CHECK SAFETY
-  // ==========================================
-
-  const checkSafety = async (
-    transactionId
-  ) => {
-    try {
-      setSafetyLoading(true);
-
-      const response = await axios.get(
-        `${API_BASE_URL}/safety/${transactionId}`
-      );
-
-      setSafetyResult(
-        response.data
-      );
-    } catch (err) {
-      console.error(
-        "Safety check error:",
-        err
-      );
-
-      alert(
-        "Unable to load safety decision."
-      );
-    } finally {
-      setSafetyLoading(false);
-    }
-  };
-
-  // ==========================================
-  // REFRESH MANUAL REVIEW QUEUE
-  // ==========================================
-
-  const fetchManualReview = async () => {
-    try {
-      setManualReviewLoading(true);
-
-      const response = await axios.get(
-        `${API_BASE_URL}/manual-review`
-      );
-
-      console.log(
-        "Manual Review Refresh Response:",
-        response.data
-      );
-
-      const records =
-        response.data?.records || [];
-
-      setManualReview(records);
-    } catch (err) {
-      console.error(
-        "Manual Review Refresh Error:",
-        err
-      );
-
-      const message =
-        err.response?.data?.detail ||
-        err.response?.data?.message ||
-        "Unable to refresh manual review queue.";
-
-      alert(message);
-    } finally {
-      setManualReviewLoading(false);
     }
   };
 
@@ -283,11 +305,6 @@ function Dashboard() {
       const response =
         await axios.post(endpoint);
 
-      console.log(
-        "Review Action Response:",
-        response.data
-      );
-
       const backendStatus =
         response.data?.review_status ||
         response.data?.status ||
@@ -311,25 +328,12 @@ function Dashboard() {
           )
       );
 
-      // Update selected transaction if open
+      // If decision panel is open,
+      // reload reasoning + history
       if (
         selectedTransaction?.transaction_id ===
         transactionId
       ) {
-        setSelectedTransaction(
-          (previous) =>
-            previous
-              ? {
-                  ...previous,
-                  review_status:
-                    backendStatus,
-                  review_action:
-                    action.toUpperCase(),
-                }
-              : previous
-        );
-
-        // Refresh history
         await fetchReviewHistory(
           transactionId
         );
@@ -340,11 +344,15 @@ function Dashboard() {
         alert(
           "Transaction approved successfully."
         );
-      } else if (action === "reject") {
+      }
+
+      if (action === "reject") {
         alert(
           "Transaction rejected successfully."
         );
-      } else if (action === "escalate") {
+      }
+
+      if (action === "escalate") {
         alert(
           "Transaction escalated successfully."
         );
@@ -379,7 +387,6 @@ function Dashboard() {
           item.success === true
       ).length,
     },
-
     {
       name: "Failed",
       value: recovery.filter(
@@ -388,7 +395,6 @@ function Dashboard() {
           item.success === false
       ).length,
     },
-
     {
       name: "Not Executed",
       value: recovery.filter(
@@ -450,59 +456,57 @@ function Dashboard() {
     ).length;
 
   // ==========================================
-  // REVIEW ANALYTICS
+  // REVIEW ANALYTICS DATA
   // ==========================================
 
-  const pendingReviewCount =
-    manualReview.filter(
-      (item) =>
-        String(
-          item.review_status || "PENDING"
-        ).toUpperCase() === "PENDING"
-    ).length;
-
-  const approvedReviewCount =
-    manualReview.filter(
-      (item) =>
-        String(
-          item.review_status || ""
-        ).toUpperCase() === "APPROVED"
-    ).length;
-
-  const rejectedReviewCount =
-    manualReview.filter(
-      (item) =>
-        String(
-          item.review_status || ""
-        ).toUpperCase() === "REJECTED"
-    ).length;
-
-  const escalatedReviewCount =
-    manualReview.filter(
-      (item) =>
-        String(
-          item.review_status || ""
-        ).toUpperCase() === "ESCALATED"
-    ).length;
-
-  const reviewOutcomeData = [
-    {
-      name: "Pending",
-      value: pendingReviewCount,
-    },
+  const reviewAnalyticsData = [
     {
       name: "Approved",
-      value: approvedReviewCount,
+      value: manualReview.filter(
+        (item) =>
+          String(
+            item.review_status || ""
+          ).toUpperCase() === "APPROVED"
+      ).length,
     },
-    {
-      name: "Rejected",
-      value: rejectedReviewCount,
-    },
+
     {
       name: "Escalated",
-      value: escalatedReviewCount,
+      value: manualReview.filter(
+        (item) =>
+          String(
+            item.review_status || ""
+          ).toUpperCase() === "ESCALATED"
+      ).length,
+    },
+
+    {
+      name: "Pending",
+      value: manualReview.filter(
+        (item) =>
+          String(
+            item.review_status || "PENDING"
+          ).toUpperCase() === "PENDING"
+      ).length,
+    },
+
+    {
+      name: "Rejected",
+      value: manualReview.filter(
+        (item) =>
+          String(
+            item.review_status || ""
+          ).toUpperCase() === "REJECTED"
+      ).length,
     },
   ];
+
+  const totalReviews =
+    reviewAnalyticsData.reduce(
+      (total, item) =>
+        total + item.value,
+      0
+    );
 
   // ==========================================
   // AI DECISION PANEL
@@ -519,7 +523,6 @@ function Dashboard() {
         {/* HEADER */}
 
         <div className="reasoning-header">
-
           <div>
             <h2>
               AI Decision & Audit Trail
@@ -541,7 +544,6 @@ function Dashboard() {
           >
             Close
           </button>
-
         </div>
 
         {/* REASONING GRID */}
@@ -549,10 +551,7 @@ function Dashboard() {
         <div className="reasoning-grid">
 
           <div className="reasoning-item">
-            <span>
-              Transaction
-            </span>
-
+            <span>Transaction</span>
             <strong>
               {
                 selectedTransaction.transaction_id ||
@@ -562,10 +561,7 @@ function Dashboard() {
           </div>
 
           <div className="reasoning-item">
-            <span>
-              Amount
-            </span>
-
+            <span>Amount</span>
             <strong>
               ₹
               {Number(
@@ -575,10 +571,7 @@ function Dashboard() {
           </div>
 
           <div className="reasoning-item">
-            <span>
-              Risk Level
-            </span>
-
+            <span>Risk Level</span>
             <strong className="risk-value">
               {
                 selectedTransaction.risk_level ||
@@ -588,10 +581,7 @@ function Dashboard() {
           </div>
 
           <div className="reasoning-item">
-            <span>
-              AI Decision
-            </span>
-
+            <span>AI Decision</span>
             <strong>
               {
                 selectedTransaction.decision ||
@@ -601,10 +591,7 @@ function Dashboard() {
           </div>
 
           <div className="reasoning-item">
-            <span>
-              Execution
-            </span>
-
+            <span>Execution</span>
             <strong>
               {
                 selectedTransaction.execution
@@ -615,10 +602,7 @@ function Dashboard() {
           </div>
 
           <div className="reasoning-item">
-            <span>
-              Result
-            </span>
-
+            <span>Result</span>
             <strong>
               {
                 selectedTransaction.result ||
@@ -628,15 +612,12 @@ function Dashboard() {
           </div>
 
           <div className="reasoning-item">
-            <span>
-              Recovered Amount
-            </span>
-
+            <span>Recovered Amount</span>
             <strong>
               ₹
               {Number(
                 selectedTransaction.recovered_amount ||
-                0
+                  0
               ).toLocaleString()}
             </strong>
           </div>
@@ -646,7 +627,6 @@ function Dashboard() {
         {/* AI EXPLANATION */}
 
         <div className="reasoning-explanation">
-
           <h3>
             Why did the agent choose this?
           </h3>
@@ -657,7 +637,6 @@ function Dashboard() {
               "-"
             }
           </p>
-
         </div>
 
         {/* AUDIT TRAIL */}
@@ -705,7 +684,7 @@ function Dashboard() {
 
         </div>
 
-        {/* SAFETY CHECK */}
+        {/* SAFETY */}
 
         <div className="safety-action">
 
@@ -737,10 +716,7 @@ function Dashboard() {
             <div className="safety-grid">
 
               <div>
-                <span>
-                  Decision
-                </span>
-
+                <span>Decision</span>
                 <strong>
                   {
                     safetyResult.decision ||
@@ -750,10 +726,7 @@ function Dashboard() {
               </div>
 
               <div>
-                <span>
-                  Action
-                </span>
-
+                <span>Action</span>
                 <strong>
                   {
                     safetyResult.action ||
@@ -763,10 +736,7 @@ function Dashboard() {
               </div>
 
               <div>
-                <span>
-                  Escalation
-                </span>
-
+                <span>Escalation</span>
                 <strong>
                   {
                     safetyResult.escalation
@@ -779,7 +749,6 @@ function Dashboard() {
             </div>
 
             <div className="safety-reason">
-
               <span>
                 Safety Reason
               </span>
@@ -790,48 +759,36 @@ function Dashboard() {
                   "-"
                 }
               </p>
-
             </div>
 
           </div>
         )}
 
-        {/* ======================================
-            REVIEW HISTORY
-        ====================================== */}
+        {/* REVIEW HISTORY */}
 
         <div className="review-history">
 
           <div className="review-history-header">
-
             <div>
               <h3>
                 Review History
               </h3>
 
               <p>
-                Human review actions and status changes
+                Human review actions for this transaction
               </p>
             </div>
-
           </div>
 
           {reviewHistoryLoading ? (
-
             <div className="decision-loading">
               Loading review history...
             </div>
-
           ) : reviewHistory.length === 0 ? (
-
-            <div className="history-empty">
-              <p>
-                No review actions taken yet.
-              </p>
+            <div className="no-history">
+              No review actions taken yet.
             </div>
-
           ) : (
-
             <div className="history-list">
 
               {reviewHistory
@@ -839,60 +796,47 @@ function Dashboard() {
                 .reverse()
                 .map(
                   (history, index) => (
-
                     <div
                       className="history-item"
                       key={index}
                     >
 
                       <div className="history-action">
-                        <strong>
-                          {
-                            history.action ||
-                            "REVIEW"
-                          }
-                        </strong>
+                        {
+                          history.action ||
+                          "-"
+                        }
                       </div>
 
                       <div className="history-status">
-
-                        <span>
-                          {
-                            history.previous_status ||
-                            "PENDING"
-                          }
-                        </span>
+                        {
+                          history.previous_status ||
+                          "PENDING"
+                        }
 
                         <span>
                           →
                         </span>
 
-                        <span>
-                          {
-                            history.new_status ||
-                            "-"
-                          }
-                        </span>
-
+                        {
+                          history.new_status ||
+                          "-"
+                        }
                       </div>
 
                       <div className="history-time">
-
                         {history.timestamp
                           ? new Date(
                               history.timestamp
                             ).toLocaleString()
                           : "-"}
-
                       </div>
 
                     </div>
-
                   )
                 )}
 
             </div>
-
           )}
 
         </div>
@@ -902,7 +846,7 @@ function Dashboard() {
   };
 
   // ==========================================
-  // LOADING STATE
+  // LOADING
   // ==========================================
 
   if (loading) {
@@ -914,7 +858,7 @@ function Dashboard() {
   }
 
   // ==========================================
-  // ERROR STATE
+  // ERROR
   // ==========================================
 
   if (error) {
@@ -932,9 +876,7 @@ function Dashboard() {
   return (
     <div className="dashboard">
 
-      {/* ======================================
-          HEADER
-      ====================================== */}
+      {/* HEADER */}
 
       <header className="dashboard-header">
 
@@ -954,9 +896,7 @@ function Dashboard() {
 
       </header>
 
-      {/* ======================================
-          KPI CARDS
-      ====================================== */}
+      {/* KPI CARDS */}
 
       <section className="stats-grid">
 
@@ -1027,9 +967,7 @@ function Dashboard() {
 
       </section>
 
-      {/* ======================================
-          BATCH PERFORMANCE
-      ====================================== */}
+      {/* BATCH PERFORMANCE */}
 
       <section className="batch-section">
 
@@ -1146,24 +1084,20 @@ function Dashboard() {
 
       </section>
 
-      {/* ======================================
-          FINANCIAL EVIDENCE
-      ====================================== */}
+      {/* FINANCIAL EVIDENCE */}
 
       <section className="financial-section">
 
         <div className="financial-header">
 
-          <div>
-            <h2>
-              Revenue Recovery Evidence
-            </h2>
+          <h2>
+            Revenue Recovery Evidence
+          </h2>
 
-            <p>
-              Measured financial impact from the
-              recovery agent
-            </p>
-          </div>
+          <p>
+            Measured financial impact from the
+            recovery agent
+          </p>
 
         </div>
 
@@ -1232,9 +1166,7 @@ function Dashboard() {
 
       </section>
 
-      {/* ======================================
-          ANALYTICS CHARTS
-      ====================================== */}
+      {/* RECOVERY CHARTS */}
 
       <section className="charts-grid">
 
@@ -1274,9 +1206,20 @@ function Dashboard() {
                   {outcomeData.map(
                     (_, index) => (
                       <Cell
-                        key={
-                          `outcome-${index}`
+                        key={`outcome-${index}`}
+                        fill={
+                          OUTCOME_COLORS[
+                            index %
+                              OUTCOME_COLORS.length
+                          ]
                         }
+                        style={{
+                          fill:
+                            OUTCOME_COLORS[
+                              index %
+                                OUTCOME_COLORS.length
+                            ],
+                        }}
                       />
                     )
                   )}
@@ -1284,7 +1227,6 @@ function Dashboard() {
                 </Pie>
 
                 <Tooltip />
-
                 <Legend />
 
               </PieChart>
@@ -1300,7 +1242,6 @@ function Dashboard() {
         <div className="chart-card">
 
           <div className="chart-header">
-
             <h2>
               Recovery Actions
             </h2>
@@ -1308,7 +1249,6 @@ function Dashboard() {
             <p>
               AI intervention distribution
             </p>
-
           </div>
 
           <div className="chart">
@@ -1333,9 +1273,20 @@ function Dashboard() {
                   {actionData.map(
                     (_, index) => (
                       <Cell
-                        key={
-                          `action-${index}`
+                        key={`action-${index}`}
+                        fill={
+                          ACTION_COLORS[
+                            index %
+                              ACTION_COLORS.length
+                          ]
                         }
+                        style={{
+                          fill:
+                            ACTION_COLORS[
+                              index %
+                                ACTION_COLORS.length
+                            ],
+                        }}
                       />
                     )
                   )}
@@ -1343,7 +1294,6 @@ function Dashboard() {
                 </Pie>
 
                 <Tooltip />
-
                 <Legend />
 
               </PieChart>
@@ -1356,9 +1306,7 @@ function Dashboard() {
 
       </section>
 
-      {/* ======================================
-          RECOVERY ACTIVITY
-      ====================================== */}
+      {/* RECOVERY ACTIVITY */}
 
       <section className="table-section">
 
@@ -1381,37 +1329,15 @@ function Dashboard() {
           <table>
 
             <thead>
-
               <tr>
-                <th>
-                  Transaction
-                </th>
-
-                <th>
-                  Amount
-                </th>
-
-                <th>
-                  Failure
-                </th>
-
-                <th>
-                  Action
-                </th>
-
-                <th>
-                  Status
-                </th>
-
-                <th>
-                  Recovered
-                </th>
-
-                <th>
-                  AI Decision
-                </th>
+                <th>Transaction</th>
+                <th>Amount</th>
+                <th>Failure</th>
+                <th>Action</th>
+                <th>Status</th>
+                <th>Recovered</th>
+                <th>AI Decision</th>
               </tr>
-
             </thead>
 
             <tbody>
@@ -1468,7 +1394,7 @@ function Dashboard() {
                         ₹
                         {Number(
                           item.recovered_amount ||
-                          0
+                            0
                         ).toLocaleString()}
                       </td>
 
@@ -1485,16 +1411,16 @@ function Dashboard() {
                                 )
                           }
                         >
-
-                          {reasoningLoading &&
-                          selectedTransaction?.transaction_id ===
-                            item.transaction_id
-                            ? "Loading..."
-                            : selectedTransaction?.transaction_id ===
+                          {
+                            reasoningLoading &&
+                            selectedTransaction?.transaction_id ===
                               item.transaction_id
-                            ? "Decision Open"
-                            : "View Decision"}
-
+                              ? "Loading..."
+                              : selectedTransaction?.transaction_id ===
+                                item.transaction_id
+                              ? "Close Decision"
+                              : "View Decision"
+                          }
                         </button>
 
                       </td>
@@ -1512,15 +1438,11 @@ function Dashboard() {
                         >
 
                           {reasoningLoading ? (
-
                             <div className="decision-loading">
                               Loading AI decision...
                             </div>
-
                           ) : (
-
                             renderDecisionPanel()
-
                           )}
 
                         </td>
@@ -1542,148 +1464,7 @@ function Dashboard() {
 
       </section>
 
-      {/* ======================================
-          REVIEW ANALYTICS
-      ====================================== */}
-
-      <section className="review-analytics-section">
-
-        <div className="review-analytics-header">
-
-          <div>
-            <h2>
-              Review Analytics
-            </h2>
-
-            <p>
-              Human review outcomes across exception transactions
-            </p>
-          </div>
-
-          <div className="review-analytics-total">
-            {manualReview.length} Total
-          </div>
-
-        </div>
-
-        {/* ANALYTICS CARDS */}
-
-        <div className="review-analytics-grid">
-
-          <div className="review-analytics-card review-analytics-pending">
-
-            <span>
-              Pending Reviews
-            </span>
-
-            <strong>
-              {pendingReviewCount}
-            </strong>
-
-          </div>
-
-          <div className="review-analytics-card review-analytics-approved">
-
-            <span>
-              Approved
-            </span>
-
-            <strong>
-              {approvedReviewCount}
-            </strong>
-
-          </div>
-
-          <div className="review-analytics-card review-analytics-rejected">
-
-            <span>
-              Rejected
-            </span>
-
-            <strong>
-              {rejectedReviewCount}
-            </strong>
-
-          </div>
-
-          <div className="review-analytics-card review-analytics-escalated">
-
-            <span>
-              Escalated
-            </span>
-
-            <strong>
-              {escalatedReviewCount}
-            </strong>
-
-          </div>
-
-        </div>
-
-        {/* REVIEW OUTCOME CHART */}
-
-        <div className="review-analytics-chart-card">
-
-          <div className="chart-header">
-
-            <h2>
-              Review Outcomes
-            </h2>
-
-            <p>
-              Distribution of human review decisions
-            </p>
-
-          </div>
-
-          <div className="chart">
-
-            <ResponsiveContainer
-              width="100%"
-              height={300}
-            >
-
-              <PieChart>
-
-                <Pie
-                  data={reviewOutcomeData}
-                  dataKey="value"
-                  nameKey="name"
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={95}
-                  label
-                >
-
-                  {reviewOutcomeData.map(
-                    (_, index) => (
-                      <Cell
-                        key={
-                          `review-outcome-${index}`
-                        }
-                      />
-                    )
-                  )}
-
-                </Pie>
-
-                <Tooltip />
-
-                <Legend />
-
-              </PieChart>
-
-            </ResponsiveContainer>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ======================================
-          MANUAL REVIEW QUEUE
-      ====================================== */}
+      {/* MANUAL REVIEW QUEUE */}
 
       <section className="manual-review-section">
 
@@ -1710,7 +1491,6 @@ function Dashboard() {
         <div className="manual-review-priority-grid">
 
           <div className="priority-card priority-card-high">
-
             <span>
               HIGH PRIORITY
             </span>
@@ -1718,11 +1498,9 @@ function Dashboard() {
             <strong>
               {highPriorityCount}
             </strong>
-
           </div>
 
           <div className="priority-card priority-card-medium">
-
             <span>
               MEDIUM PRIORITY
             </span>
@@ -1730,11 +1508,9 @@ function Dashboard() {
             <strong>
               {mediumPriorityCount}
             </strong>
-
           </div>
 
           <div className="priority-card priority-card-low">
-
             <span>
               LOW PRIORITY
             </span>
@@ -1742,7 +1518,6 @@ function Dashboard() {
             <strong>
               {lowPriorityCount}
             </strong>
-
           </div>
 
         </div>
@@ -1756,11 +1531,9 @@ function Dashboard() {
             onClick={fetchManualReview}
             disabled={manualReviewLoading}
           >
-
             {manualReviewLoading
               ? "Refreshing..."
               : "Refresh Queue"}
-
           </button>
 
         </div>
@@ -1774,39 +1547,14 @@ function Dashboard() {
             <thead>
 
               <tr>
-
-                <th>
-                  Transaction
-                </th>
-
-                <th>
-                  Amount
-                </th>
-
-                <th>
-                  Failure
-                </th>
-
-                <th>
-                  Action
-                </th>
-
-                <th>
-                  Priority
-                </th>
-
-                <th>
-                  Status
-                </th>
-
-                <th>
-                  Review Reason
-                </th>
-
-                <th>
-                  Actions
-                </th>
-
+                <th>Transaction</th>
+                <th>Amount</th>
+                <th>Failure</th>
+                <th>Action</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Review Reason</th>
+                <th>Actions</th>
               </tr>
 
             </thead>
@@ -1816,7 +1564,6 @@ function Dashboard() {
               {manualReview.length === 0 ? (
 
                 <tr>
-
                   <td
                     colSpan="8"
                     style={{
@@ -1825,7 +1572,6 @@ function Dashboard() {
                   >
                     No exceptions require manual review.
                   </td>
-
                 </tr>
 
               ) : (
@@ -1860,8 +1606,6 @@ function Dashboard() {
                         }
                       >
 
-                        {/* MANUAL REVIEW ROW */}
-
                         <tr>
 
                           <td>
@@ -1891,14 +1635,12 @@ function Dashboard() {
                             }
                           </td>
 
-                          {/* PRIORITY */}
-
                           <td>
 
                             <span
                               className={`priority-badge priority-${String(
                                 item.priority ||
-                                "medium"
+                                  "medium"
                               ).toLowerCase()}`}
                             >
                               {
@@ -1908,8 +1650,6 @@ function Dashboard() {
                             </span>
 
                           </td>
-
-                          {/* STATUS */}
 
                           <td>
 
@@ -1923,8 +1663,6 @@ function Dashboard() {
 
                           </td>
 
-                          {/* REVIEW REASON */}
-
                           <td>
                             {
                               item.review_reason ||
@@ -1932,13 +1670,11 @@ function Dashboard() {
                             }
                           </td>
 
-                          {/* ACTION BUTTONS */}
-
                           <td>
 
                             <div className="review-action-buttons">
 
-                              {/* VIEW DECISION */}
+                              {/* VIEW */}
 
                               <button
                                 className="reasoning-btn"
@@ -1951,16 +1687,16 @@ function Dashboard() {
                                       )
                                 }
                               >
-
-                                {reasoningLoading &&
-                                selectedTransaction?.transaction_id ===
-                                  item.transaction_id
-                                  ? "Loading..."
-                                  : selectedTransaction?.transaction_id ===
+                                {
+                                  reasoningLoading &&
+                                  selectedTransaction?.transaction_id ===
                                     item.transaction_id
-                                  ? "Close Decision"
-                                  : "View Decision"}
-
+                                    ? "Loading..."
+                                    : selectedTransaction?.transaction_id ===
+                                      item.transaction_id
+                                    ? "Close Decision"
+                                    : "View Decision"
+                                }
                               </button>
 
                               {/* APPROVE */}
@@ -1977,11 +1713,9 @@ function Dashboard() {
                                   isActionInProgress
                                 }
                               >
-
                                 {approveLoading
                                   ? "Approving..."
                                   : "Approve"}
-
                               </button>
 
                               {/* REJECT */}
@@ -1998,11 +1732,9 @@ function Dashboard() {
                                   isActionInProgress
                                 }
                               >
-
                                 {rejectLoading
                                   ? "Rejecting..."
                                   : "Reject"}
-
                               </button>
 
                               {/* ESCALATE */}
@@ -2019,11 +1751,9 @@ function Dashboard() {
                                   isActionInProgress
                                 }
                               >
-
                                 {escalateLoading
                                   ? "Escalating..."
                                   : "Escalate"}
-
                               </button>
 
                             </div>
@@ -2032,7 +1762,7 @@ function Dashboard() {
 
                         </tr>
 
-                        {/* INLINE AI DECISION */}
+                        {/* INLINE DECISION */}
 
                         {selectedTransaction?.transaction_id ===
                           item.transaction_id && (
@@ -2045,15 +1775,11 @@ function Dashboard() {
                             >
 
                               {reasoningLoading ? (
-
                                 <div className="decision-loading">
                                   Loading AI decision...
                                 </div>
-
                               ) : (
-
                                 renderDecisionPanel()
-
                               )}
 
                             </td>
@@ -2073,6 +1799,173 @@ function Dashboard() {
             </tbody>
 
           </table>
+
+        </div>
+
+      </section>
+
+      {/* ==========================================
+          REVIEW ANALYTICS
+      ========================================== */}
+
+      <section className="review-analytics-section">
+
+        <div className="review-analytics-header">
+
+          <div>
+            <h2>
+              Review Analytics
+            </h2>
+
+            <p>
+              Human review outcomes across exception transactions
+            </p>
+          </div>
+
+          <div className="review-total">
+            {totalReviews} Total
+          </div>
+
+        </div>
+
+        {/* ANALYTICS CARDS */}
+
+        <div className="review-stats-grid">
+
+          <div className="review-stat-card">
+            <span>
+              Pending Reviews
+            </span>
+
+            <strong>
+              {
+                reviewAnalyticsData.find(
+                  (item) =>
+                    item.name === "Pending"
+                )?.value || 0
+              }
+            </strong>
+          </div>
+
+          <div className="review-stat-card">
+            <span>
+              Approved
+            </span>
+
+            <strong>
+              {
+                reviewAnalyticsData.find(
+                  (item) =>
+                    item.name === "Approved"
+                )?.value || 0
+              }
+            </strong>
+          </div>
+
+          <div className="review-stat-card">
+            <span>
+              Rejected
+            </span>
+
+            <strong>
+              {
+                reviewAnalyticsData.find(
+                  (item) =>
+                    item.name === "Rejected"
+                )?.value || 0
+              }
+            </strong>
+          </div>
+
+          <div className="review-stat-card">
+            <span>
+              Escalated
+            </span>
+
+            <strong>
+              {
+                reviewAnalyticsData.find(
+                  (item) =>
+                    item.name === "Escalated"
+                )?.value || 0
+              }
+            </strong>
+          </div>
+
+        </div>
+
+        {/* REVIEW PIE CHART */}
+
+        <div className="review-analytics-chart-card">
+
+          <div className="chart-header">
+
+            <h2>
+              Review Outcomes
+            </h2>
+
+            <p>
+              Distribution of human review decisions
+            </p>
+
+          </div>
+
+          <div className="chart">
+
+            <ResponsiveContainer
+              width="100%"
+              height={350}
+            >
+
+              <PieChart>
+
+                <Pie
+                  data={reviewAnalyticsData}
+                  dataKey="value"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={110}
+                  label
+                  isAnimationActive={true}
+                >
+
+                  {reviewAnalyticsData.map(
+                    (_, index) => (
+
+                      <Cell
+                        key={`review-${index}`}
+                        fill={
+                          REVIEW_COLORS[
+                            index %
+                              REVIEW_COLORS.length
+                          ]
+                        }
+                        style={{
+                          fill:
+                            REVIEW_COLORS[
+                              index %
+                                REVIEW_COLORS.length
+                            ],
+                        }}
+                        stroke="#ffffff"
+                        strokeWidth={2}
+                      />
+
+                    )
+                  )}
+
+                </Pie>
+
+                <Tooltip />
+
+                <Legend />
+
+              </PieChart>
+
+            </ResponsiveContainer>
+
+          </div>
 
         </div>
 
